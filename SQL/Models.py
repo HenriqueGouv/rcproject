@@ -1,7 +1,5 @@
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional
-from sqlmodel import create_engine, Session, SQLModel, Field, Relationship, select
+from sqlmodel import SQLModel, Field, Relationship
 from datetime import datetime
 
 class Competition_Driver_Link(SQLModel, table = True):
