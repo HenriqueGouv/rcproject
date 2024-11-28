@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="rcproject.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:rcproject"
+    xmlns:v="clr-namespace:rcproject.View"
+    Shell.FlyoutBehavior="Flyout"
+    ForegroundColor="#006700"
+    BackgroundColor="#FBFDFE"   
+    FlyoutBackgroundColor="#FBFDFE"
+    TabBarBackgroundColor="#006700"
+    TabBarForegroundColor="#006700"
+    TabBarUnselectedColor="#006700"
+    TabBarTitleColor="#006700"
+    DisabledColor="#006700"
+    UnselectedColor="#006700"
+    Title="UKRCCA"
+    TitleColor="#006700">
+
+    <ShellContent 
+
+        ContentTemplate="{DataTemplate v:AboutUs}" 
+        />
+
+</Shell>
