@@ -936,3 +936,4 @@ C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-android\stamp\_
 C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-android\resizetizer\r\drawable\aboutus.jpg

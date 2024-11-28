@@ -18,9 +18,28 @@
     Title="UKRCCA"
     TitleColor="#006700">
 
-    <ShellContent 
+    <Shell.TitleView>
+        <Grid>
+            <Label Text="UKRCCA" 
+                   FontSize="Title"
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center" 
+                   Margin="0,0,0,0"
+                   Padding="0"
+                   TextColor="#006700"/>
+        </Grid>
+    </Shell.TitleView>
 
-        ContentTemplate="{DataTemplate v:AboutUs}" 
-        />
+    <FlyoutItem Title="About Us" >
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate v:AboutUs}"/>
+        </Tab>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Competitions" >
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate v:Competitions}"/>
+        </Tab>
+    </FlyoutItem>
 
 </Shell>

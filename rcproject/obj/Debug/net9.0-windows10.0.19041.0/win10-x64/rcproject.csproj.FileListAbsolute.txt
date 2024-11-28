@@ -470,3 +470,5 @@ C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-windows10.0.190
 C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+C:\Users\jspal\source\repos\rcproject\rcproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\aboutus.scale-100.jpg
+C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\aboutus.scale-100.jpg
