@@ -27,11 +27,13 @@
                                                      Padding="15" 
                                                      Spacing="10">
                                     <Label Text="{Binding Name}" 
-                                           FontSize="20" 
+                                           FontSize="16" 
                                            TextColor="#006700"/>
-                                    <Label Text="{Binding Date, StringFormat='Date: {0:MMMM dd, yyyy}'}" 
+                                    <Label Text="{Binding Date, StringFormat='Date: {0:MMMM dd, yyyy}'}"
+                                           TextColor="#006700"
                                            FontSize="16"/>
-                                    <Label Text="{Binding Location, StringFormat='Location: {0}'}" 
+                                    <Label Text="{Binding Time, StringFormat='Time: {0:hh\\:mm tt}'}" 
+                                           TextColor="#006700"
                                            FontSize="16"/>
                                 </VerticalStackLayout>
                             </Grid>
