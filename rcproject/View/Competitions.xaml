@@ -6,82 +6,93 @@
              Title="UKRCCA">
     <ScrollView>
         <VerticalStackLayout Spacing="20" Padding="20">
+            <!-- Existing cards here -->
             <!-- First Card -->
             <Frame CornerRadius="10" 
-                   BorderColor="#006700" 
-                   Padding="0" 
-                   HeightRequest="200">
+            BorderColor="#006700" 
+            Padding="0" 
+            HeightRequest="200">
                 <Frame.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnCard1Tapped"/>
                 </Frame.GestureRecognizers>
                 <Grid ColumnDefinitions="*, *">
                     <Image Grid.Column="0"
-                           Source="imageone.png"
-                           Aspect="AspectFill"/>
+                    Source="imageone.png"
+                    Aspect="AspectFill"/>
                     <VerticalStackLayout Grid.Column="1" 
-                                       Padding="15" 
-                                       Spacing="10">
+                                Padding="15" 
+                                Spacing="10">
                         <Label Text="Competition" 
-                               FontSize="20" 
-                               TextColor="#006700"/>
+                        FontSize="20" 
+                        TextColor="#006700"/>
                         <Label Text="Date: 25th March 2024" 
-                               FontSize="16"/>
+                        FontSize="16"/>
                         <Label Text="Location: Manchester, UK" 
-                               FontSize="16"/>
+                        FontSize="16"/>
                     </VerticalStackLayout>
                 </Grid>
             </Frame>
 
             <!-- Second Card -->
             <Frame CornerRadius="10" 
-                   BorderColor="#006700" 
-                   Padding="0" 
-                   HeightRequest="200">
+            BorderColor="#006700" 
+            Padding="0" 
+            HeightRequest="200">
                 <Frame.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnCard2Tapped"/>
                 </Frame.GestureRecognizers>
                 <Grid ColumnDefinitions="*, *">
                     <Image Grid.Column="0"
-                           Source="imagetwo.png"
-                           Aspect="AspectFill"/>
+                    Source="imagetwo.png"
+                    Aspect="AspectFill"/>
                     <VerticalStackLayout Grid.Column="1" 
-                                       Padding="15" 
-                                       Spacing="10">
+                                Padding="15" 
+                                Spacing="10">
                         <Label Text="Competition" 
-                               FontSize="20" 
-                               TextColor="#006700"/>
+                        FontSize="20" 
+                        TextColor="#006700"/>
                         <Label Text="Date: 15th April 2024" 
-                               FontSize="16"/>
+                        FontSize="16"/>
                         <Label Text="Location: Liverpool, UK" 
-                               FontSize="16"/>
+                        FontSize="16"/>
                     </VerticalStackLayout>
                 </Grid>
             </Frame>
             <!-- Third Card -->
             <Frame CornerRadius="10" 
-       BorderColor="#006700" 
-       Padding="0" 
-       HeightRequest="200">
+BorderColor="#006700" 
+Padding="0" 
+HeightRequest="200">
                 <Frame.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnCard2Tapped"/>
                 </Frame.GestureRecognizers>
                 <Grid ColumnDefinitions="*, *">
                     <Image Grid.Column="0"
-               Source="imagethree.png"
-               Aspect="AspectFill"/>
+        Source="imagethree.png"
+        Aspect="AspectFill"/>
                     <VerticalStackLayout Grid.Column="1" 
-                           Padding="15" 
-                           Spacing="10">
+                    Padding="15" 
+                    Spacing="10">
                         <Label Text="Competition" 
-                   FontSize="20" 
-                   TextColor="#006700"/>
+            FontSize="20" 
+            TextColor="#006700"/>
                         <Label Text="Date: 1st December 2024" 
-                   FontSize="16"/>
+            FontSize="16"/>
                         <Label Text="Location: Liverpool, UK" 
-                   FontSize="16"/>
+            FontSize="16"/>
                     </VerticalStackLayout>
                 </Grid>
             </Frame>
+
+            <!-- Add Competition Button -->
+            <Button Text="Create Competition +" 
+                    BackgroundColor="#006700"
+                    TextColor="White"
+                    FontSize="18"
+                    CornerRadius="10"
+                    Padding="20,10"
+                    Margin="0,20,0,0"
+                    Clicked="OnCreateCompetitionClicked"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

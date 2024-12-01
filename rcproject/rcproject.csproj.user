@@ -24,6 +24,9 @@
     <MauiXaml Update="View\Competitions.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="View\CreateCompetitions.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="View\Drivers.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

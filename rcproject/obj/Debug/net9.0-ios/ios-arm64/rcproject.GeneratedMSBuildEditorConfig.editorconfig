@@ -60,6 +60,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = rcproject.View.Competition
 build_metadata.AdditionalFiles.TargetPath = View\Competitions.xaml
 build_metadata.AdditionalFiles.RelativePath = View\Competitions.xaml
 
+[C:/Users/hgou9/Source/Repos/rcproject/MauiApp/rcproject/View/CreateCompetitions.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = rcproject.View.CreateCompetitions.xaml
+build_metadata.AdditionalFiles.TargetPath = View\CreateCompetitions.xaml
+build_metadata.AdditionalFiles.RelativePath = View\CreateCompetitions.xaml
+
 [C:/Users/hgou9/Source/Repos/rcproject/MauiApp/rcproject/View/Drivers.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = rcproject.View.Drivers.xaml

@@ -57,4 +57,8 @@ public partial class Competitions : ContentPage
             await DisplayAlert("Success", "Code submitted: " + result, "OK");
         }
     }
+    private async void OnCreateCompetitionClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new CreateCompetition());
+    }
 }

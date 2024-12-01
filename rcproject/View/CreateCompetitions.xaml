@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rcproject.View.CreateCompetition"
+             Title="Create Competition">
+    <VerticalStackLayout Spacing="20" Padding="20">
+        <Entry Placeholder="Competition Name"
+               x:Name="CompetitionName"/>
+
+        <Entry Placeholder="Location"
+               x:Name="Location"/>
+
+        <DatePicker x:Name="CompetitionDate"/>
+
+        <TimePicker x:Name="CompetitionTime"/>
+
+        <Button Text="Create"
+                BackgroundColor="White"
+                TextColor="#006700"
+                Clicked="OnCreateClicked"/>
+    </VerticalStackLayout>
+</ContentPage>
