@@ -306,3 +306,6 @@ C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-ios\ios
 C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-ios\ios-arm64\rcproject.genruntimeconfig.cache
 C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-ios\ios-arm64\ref\rcproject.dll
 C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-ios\ios-arm64\resizetizer\r\Resources\rctrucks15.jpg
+C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-ios\ios-arm64\resizetizer\r\Resources\imageone.png
+C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-ios\ios-arm64\resizetizer\r\Resources\imagetwo.png
+C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-ios\ios-arm64\resizetizer\r\Resources\imagethree.png

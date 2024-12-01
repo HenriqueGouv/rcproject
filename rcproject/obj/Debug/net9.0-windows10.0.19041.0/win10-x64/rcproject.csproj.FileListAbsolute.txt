@@ -951,3 +951,9 @@ C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\bin\Debug\net9.0-windows
 C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
 C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\rctrucks15.scale-100.jpg
 C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\rctrucks15.scale-100.jpg
+C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\imageone.scale-100.png
+C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\imagetwo.scale-100.png
+C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\imageone.scale-100.png
+C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\imagetwo.scale-100.png
+C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\imagethree.scale-100.png
+C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\imagethree.scale-100.png

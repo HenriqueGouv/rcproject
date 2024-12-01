@@ -298,3 +298,6 @@ C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-maccata
 C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.genruntimeconfig.cache
 C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\ref\rcproject.dll
 C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\rctrucks15.jpg
+C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\imageone.png
+C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\imagetwo.png
+C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\imagethree.png

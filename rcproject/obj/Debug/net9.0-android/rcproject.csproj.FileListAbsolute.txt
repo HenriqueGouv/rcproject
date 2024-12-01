@@ -2281,6 +2281,8 @@ C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-android
 C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-android\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-android\resizetizer\r\drawable\rctrucks15.jpg
+C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-android\resizetizer\r\drawable\imageone.png
+C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-android\resizetizer\r\drawable\imagetwo.png
 C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-android\android\typemaps.arm64-v8a.ll
 C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-android\android\environment.arm64-v8a.ll
 C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-android\android\compressed_assemblies.arm64-v8a.ll
@@ -2290,3 +2292,4 @@ C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-android
 C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-android\android\marshal_methods.arm64-v8a.o
 C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-android\android\jni_remap.arm64-v8a.o
 C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
+C:\Users\hgou9\Source\Repos\rcproject\MauiApp\rcproject\obj\Debug\net9.0-android\resizetizer\r\drawable\imagethree.png
