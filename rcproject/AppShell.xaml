@@ -41,10 +41,12 @@
             <ShellContent ContentTemplate="{DataTemplate v:Competitions}"/>
         </Tab>
     </FlyoutItem>
-    <ShellContent
-    Title="Create Competition"
-    ContentTemplate="{DataTemplate v:CreateCompetition}"
-    Route="CreateCompetition"/>
+    <FlyoutItem Title="Create Competition">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate v:CreateCompetitions}"/>
+        </Tab>
+
+    </FlyoutItem>
 
 </Shell>
 

@@ -1,22 +1,42 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="rcproject.View.CreateCompetition"
+             xmlns:vm="clr-namespace:rcproject.ViewModel"
+             x:Class="rcproject.View.CreateCompetitions"
+             xmlns:v="clr-namespace:rcproject.View"
              Title="Create Competition">
+
+    <ContentPage.BindingContext>
+        <vm:CreateCompetitions />
+    </ContentPage.BindingContext>
+
     <VerticalStackLayout Spacing="20" Padding="20">
+
         <Entry Placeholder="Competition Name"
-               x:Name="CompetitionName"/>
+               Text="{Binding Name}"/>
 
         <Entry Placeholder="Location"
-               x:Name="Location"/>
+               Text="{Binding Location}"/>
 
-        <DatePicker x:Name="CompetitionDate"/>
+        <DatePicker Date="{Binding Date}"/>
 
-        <TimePicker x:Name="CompetitionTime"/>
+        <TimePicker Time="{Binding Time}"/>
 
-        <Button Text="Create"
-                BackgroundColor="White"
-                TextColor="#006700"
-                Clicked="OnCreateClicked"/>
+        <Entry Placeholder="Join Code"
+               Text="{Binding JoinCode}"/>
+
+        <Image Source="{Binding MapsImageUrl}" 
+               IsVisible="{Binding MapsImageUrl, Converter={StaticResource NullToVisibilityConverter}}" 
+               Aspect="AspectFit"/>
+
+        <Button Text="Create Competition +" 
+                BackgroundColor="#006700"
+                TextColor="White"
+                FontSize="18"
+                CornerRadius="10"
+                Padding="20,10"
+                Margin="0,20,0,0"
+                Command="{Binding CreateCompetitionCommand}"/>
+
     </VerticalStackLayout>
 </ContentPage>

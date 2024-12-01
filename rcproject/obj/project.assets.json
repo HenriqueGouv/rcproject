@@ -26412,24 +26412,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hgou9\\.nuget\\packages\\": {},
+    "C:\\Users\\jspal\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hgou9\\Source\\Repos\\rcproject\\MauiApp\\rcproject\\rcproject.csproj",
+      "projectUniqueName": "C:\\Users\\jspal\\source\\repos\\rcproject\\rcproject\\rcproject.csproj",
       "projectName": "rcproject",
-      "projectPath": "C:\\Users\\hgou9\\Source\\Repos\\rcproject\\MauiApp\\rcproject\\rcproject.csproj",
-      "packagesPath": "C:\\Users\\hgou9\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hgou9\\Source\\Repos\\rcproject\\MauiApp\\rcproject\\obj\\",
+      "projectPath": "C:\\Users\\jspal\\source\\repos\\rcproject\\rcproject\\rcproject.csproj",
+      "packagesPath": "C:\\Users\\jspal\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jspal\\source\\repos\\rcproject\\rcproject\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\hgou9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jspal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

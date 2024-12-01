@@ -5,6 +5,7 @@ public partial class Competitions : ContentPage
     public Competitions()
     {
         InitializeComponent();
+        BindingContext = new CreateCompetitions();
     }
 
     private async void OnCard1Tapped(object sender, EventArgs e)
@@ -59,6 +60,6 @@ public partial class Competitions : ContentPage
     }
     private async void OnCreateCompetitionClicked(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new CreateCompetition());
+        await Navigation.PushAsync(new CreateCompetitions());
     }
 }
