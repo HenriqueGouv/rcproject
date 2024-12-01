@@ -31,21 +31,21 @@
     </Shell.TitleView>
 
     <FlyoutItem Title="About Us" >
-        <Tab>
-            <ShellContent ContentTemplate="{DataTemplate v:AboutUs}"/>
-        </Tab>
+        
+        <ShellContent ContentTemplate="{DataTemplate v:AboutUs}"/>
+        
     </FlyoutItem>
 
     <FlyoutItem Title="Competitions" >
-        <Tab>
-            <ShellContent ContentTemplate="{DataTemplate v:Competitions}"/>
-        </Tab>
+        
+        <ShellContent ContentTemplate="{DataTemplate v:Competitions}"/>
+        
     </FlyoutItem>
+    
     <FlyoutItem Title="Create Competition">
-        <Tab>
-            <ShellContent ContentTemplate="{DataTemplate v:CreateCompetitions}"/>
-        </Tab>
-
+        
+        <ShellContent ContentTemplate="{DataTemplate v:CreateCompetitions}"/>
+        
     </FlyoutItem>
 
 </Shell>
