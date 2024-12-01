@@ -11,11 +11,11 @@ namespace rcproject.ViewModel
 {
     public class CreateCompetitions : INotifyPropertyChanged
     {
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged = delegate { };
 
         public ObservableCollection<Competition> Competitions { get; set; }
 
-        private string name;
+        private string name = string.Empty;
         public string Name
         {
             get => name;
@@ -29,7 +29,7 @@ namespace rcproject.ViewModel
             }
         }
 
-        private string location;
+        private string location = string.Empty;
         public string Location
         {
             get => location;
@@ -72,7 +72,7 @@ namespace rcproject.ViewModel
             }
         }
 
-        private string joinCode;
+        private string joinCode = string.Empty;
         public string JoinCode
         {
             get => joinCode;
@@ -86,7 +86,7 @@ namespace rcproject.ViewModel
             }
         }
 
-        private string mapsImageUrl;
+        private string mapsImageUrl = string.Empty;
         public string MapsImageUrl
         {
             get => mapsImageUrl;
@@ -127,7 +127,7 @@ namespace rcproject.ViewModel
             Date = DateTime.Now;
             Time = DateTime.Now.TimeOfDay;
             JoinCode = string.Empty;
-            MapsImageUrl = null;
+            MapsImageUrl = string.Empty;
         }
 
         private string GenerateMapsImageUrl(string location)
