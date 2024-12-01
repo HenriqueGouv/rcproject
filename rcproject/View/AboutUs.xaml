@@ -3,18 +3,52 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="rcproject.View.AboutUs"
              xmlns:v="clr-namespace:rcproject.View"
-             Title="UKRCCA"
+             Title="UKRCCA" 
              >
     <VerticalStackLayout>
-        <Image Source="aboutus.jpg"
-               Margin="0"
+        <Frame CornerRadius="20"
+               IsClippedToBounds="True" 
+               Padding="0"
+               Margin="2">
+        <Image 
+               Source="aboutus.jpg" 
+               Margin="2"
                Aspect="Fill"
-               
-               />
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            TextColor="#006700"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            />
+        </Frame>
+        <Label Text="Welcome to UKRCCA!"
+                   TextColor="#006700"
+                   FontSize="24"
+                   HorizontalOptions="Center"/>
+
+        <Label Text="Your Ultimate Rock Crawling Competition Platform"
+                   TextColor="#006700"
+                   FontSize="18"
+                   HorizontalTextAlignment="Center"/>
+
+        <Label Text="Create and manage rock crawling competitions with ease. Our platform provides comprehensive tools for:"
+                   TextColor="#006700"
+                   Margin="0,10,0,0"
+               HorizontalTextAlignment="Center"/>
+
+        <Label Text="• Competition Setup and Management&#10;• Participant Registration&#10;• Score Tracking&#10;• Event Scheduling;"
+                   TextColor="#006700"
+               HorizontalTextAlignment="Center"/>
+
+        <Label Text="Join the growing community of rock crawling enthusiasts and competition organizers!"
+                   TextColor="#006700"
+                   Margin="0,10,0,0"
+               HorizontalTextAlignment="Center"/>
+        <Frame CornerRadius="20"
+        IsClippedToBounds="True" 
+        Padding="0"
+        Margin="2">
+            <Image 
+        Source="rctrucks15.jpg" 
+        Margin="2"
+        Aspect="Fill"
+     />
+        </Frame>
+
     </VerticalStackLayout>
 </ContentPage>
