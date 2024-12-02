@@ -40,6 +40,7 @@ namespace rcproject.ViewModel
                     location = value;
                     OnPropertyChanged(nameof(Location));
                     MapsImageUrl = GenerateMapsImageUrl(location);
+                    IsMapVisible= !string.IsNullOrEmpty(location);
                 }
             }
         }
@@ -100,6 +101,20 @@ namespace rcproject.ViewModel
             }
         }
 
+        private bool isMapVisible = false;
+        public bool IsMapVisible
+        {
+            get => isMapVisible;
+            set
+            {
+                if (isMapVisible != value)
+                {
+                    isMapVisible = value;
+                    OnPropertyChanged(nameof(IsMapVisible));
+                }
+            }
+        }
+
         public Command CreateCompetitionCommand { get; }
 
         public CreateCompetitions()
@@ -128,6 +143,7 @@ namespace rcproject.ViewModel
             Time = DateTime.Now.TimeOfDay;
             JoinCode = string.Empty;
             MapsImageUrl = string.Empty;
+            IsMapVisible = false;
         }
 
         private string GenerateMapsImageUrl(string location)

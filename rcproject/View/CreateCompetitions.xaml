@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:rcproject.ViewModel"
              x:Class="rcproject.View.CreateCompetitions"
+             xmlns:m="clr-namespace:rcproject.Model"
              xmlns:v="clr-namespace:rcproject.View"
              Title="Create Competition">
 
@@ -10,7 +11,7 @@
         <vm:CreateCompetitions />
     </ContentPage.BindingContext>
 
-    <VerticalStackLayout Spacing="20" Padding="20">
+    <VerticalStackLayout Spacing="20" Padding="20" x:DataType="vm:CreateCompetitions">
 
         <Entry Placeholder="Competition Name"
                Text="{Binding Name}"/>
@@ -24,10 +25,6 @@
 
         <Entry Placeholder="Join Code"
                Text="{Binding JoinCode}"/>
-
-        <Image Source="{Binding MapsImageUrl}" 
-               IsVisible="{Binding MapsImageUrl}" 
-               Aspect="AspectFit"/>
 
         <Button Text="Create Competition +" 
                 BackgroundColor="#006700"

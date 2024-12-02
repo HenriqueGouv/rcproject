@@ -2,9 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:rcproject.ViewModel"
+             xmlns:m="clr-namespace:rcproject.Model"
              x:Class="rcproject.View.Competitions"
-             
-             Title="UKRCCA">
+             Title="UKRCCA"
+             x:DataType="vm:CreateCompetitions">
 
     <ContentPage.BindingContext>
         <vm:CreateCompetitions />
@@ -14,11 +15,13 @@
         <VerticalStackLayout Spacing="20" Padding="20">
             <CollectionView ItemsSource="{Binding Competitions}">
                 <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Frame CornerRadius="10" 
-                               BorderColor="#006700" 
-                               Padding="0" 
-                               HeightRequest="200">
+                    <DataTemplate x:DataType="m:Competition">
+                        <Border Stroke="#006700" 
+                                Padding="0" 
+                                HeightRequest="200">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+                            </Border.StrokeShape>
                             <Grid ColumnDefinitions="*, *">
                                 <Image Grid.Column="0"
                                        Source="{Binding MapsImageUrl}"
@@ -37,7 +40,7 @@
                                            FontSize="16"/>
                                 </VerticalStackLayout>
                             </Grid>
-                        </Frame>
+                        </Border>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>

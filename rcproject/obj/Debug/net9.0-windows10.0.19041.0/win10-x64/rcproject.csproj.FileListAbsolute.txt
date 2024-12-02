@@ -493,9 +493,9 @@ C:\Users\jspal\source\repos\rcproject\rcproject\bin\Debug\net9.0-windows10.0.190
 C:\Users\jspal\source\repos\rcproject\rcproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\FluentUI.cs
 C:\Users\jspal\source\repos\rcproject\rcproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\OpenSans-Regular.ttf
 C:\Users\jspal\source\repos\rcproject\rcproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\OpenSans-Semibold.ttf
+C:\Users\jspal\source\repos\rcproject\rcproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\rctrucks15.scale-100.jpg
 C:\Users\jspal\source\repos\rcproject\rcproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\imageone.scale-100.png
 C:\Users\jspal\source\repos\rcproject\rcproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\imagethree.scale-100.png
-C:\Users\jspal\source\repos\rcproject\rcproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\rctrucks15.scale-100.jpg
 C:\Users\jspal\source\repos\rcproject\rcproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\imagetwo.scale-100.png
 C:\Users\jspal\source\repos\rcproject\rcproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\aboutus.scale-100.jpg
 C:\Users\jspal\source\repos\rcproject\rcproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\appiconLargeTile.scale-400.png
@@ -881,9 +881,9 @@ C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-windows10.0.190
 C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\f\FluentUI.cs
 C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf
 C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf
+C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\rctrucks15.scale-100.jpg
 C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\imageone.scale-100.png
 C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\imagethree.scale-100.png
-C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\rctrucks15.scale-100.jpg
 C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\imagetwo.scale-100.png
 C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\aboutus.scale-100.jpg
 C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png

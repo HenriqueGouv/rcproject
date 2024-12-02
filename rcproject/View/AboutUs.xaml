@@ -6,16 +6,11 @@
              Title="UKRCCA" 
              >
     <VerticalStackLayout>
-        <Frame CornerRadius="20"
-               IsClippedToBounds="True" 
-               Padding="0"
-               Margin="2">
         <Image 
                Source="aboutus.jpg" 
                Margin="2"
                Aspect="Fill"
             />
-        </Frame>
         <Label Text="Welcome to UKRCCA!"
                    TextColor="#006700"
                    FontSize="24"
@@ -39,16 +34,10 @@
                    TextColor="#006700"
                    Margin="0,10,0,0"
                HorizontalTextAlignment="Center"/>
-        <Frame CornerRadius="20"
-        IsClippedToBounds="True" 
-        Padding="0"
-        Margin="2">
-            <Image 
+        <Image 
         Source="rctrucks15.jpg" 
         Margin="2"
         Aspect="Fill"
      />
-        </Frame>
-
     </VerticalStackLayout>
 </ContentPage>
