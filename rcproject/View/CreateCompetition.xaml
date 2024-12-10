@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rcproject.View.CreateCompetition"
+             xmlns:vm="clr-namespace:rcproject.ViewModel"
+             Title="CreateCompetition">
+
+
+    <ContentPage.BindingContext>
+        <vm:CreateCompetitions/>
+    </ContentPage.BindingContext>
+
+    <ScrollView VerticalScrollBarVisibility="Default">
+
+        <Grid RowDefinitions="*,*,*,*,*,*" Padding="20" ColumnSpacing="20" RowSpacing="20">
+
+            <Entry Placeholder="Competition Name" 
+                   Grid.Row="0" 
+                   PlaceholderColor="#006700"
+                   Text="{Binding Name}" TextColor="#006700"
+                   />
+
+            <Entry Placeholder="Location" 
+                   Grid.Row="1"
+                   PlaceholderColor="#006700" 
+                   TextColor="#006700"
+                   Text="{Binding Location}"/>
+
+            <DatePicker Date="{Binding Date}" Grid.Row="2" TextColor="#006700"/>
+
+            <TimePicker Time="{Binding Time}" Grid.Row="3" TextColor="#006700"/>
+
+            <Entry Placeholder="Join code"
+                   Grid.Row="4"
+                   PlaceholderColor="#006700" 
+                   TextColor="#006700"
+                   Text="{Binding JoinCode}"/>
+
+            <Button Text="Create Competition +" 
+                    BackgroundColor="#006700" 
+                    TextColor="White" 
+                    FontSize="16"  
+                    CornerRadius="10"  
+                    Grid.Row="5"  
+                    HeightRequest="10"
+                    Command="{Binding AddCompetitionCommand}"
+                    />
+
+        </Grid>
+
+
+    </ScrollView>
+
+
+</ContentPage>

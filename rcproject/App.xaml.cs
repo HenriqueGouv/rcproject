@@ -1,7 +1,11 @@
-﻿namespace rcproject
+﻿using rcproject.ViewModel;
+
+namespace rcproject
 {
     public partial class App : Application
     {
+
+        public static CreateCompetitions ViewModel { get; } = new CreateCompetitions();
         public App()
         {
             InitializeComponent();

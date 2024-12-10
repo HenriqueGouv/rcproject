@@ -3,7 +3,12 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "rcproject.dll" comes first in this list. */
 		"rcproject.dll",
+		"CommunityToolkit.Mvvm.dll",
 		"GoogleGson.dll",
+		"Microsoft.EntityFrameworkCore.dll",
+		"Microsoft.EntityFrameworkCore.Abstractions.dll",
+		"Microsoft.Extensions.Caching.Abstractions.dll",
+		"Microsoft.Extensions.Caching.Memory.dll",
 		"Microsoft.Extensions.Configuration.dll",
 		"Microsoft.Extensions.Configuration.Abstractions.dll",
 		"Microsoft.Extensions.DependencyInjection.dll",

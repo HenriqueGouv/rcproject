@@ -1,131 +1,58 @@
-﻿using rcproject.Model;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using Microsoft.Maui.Devices.Sensors;
+using rcproject.Model;
+using rcproject.View;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using Competition = rcproject.Model.Competition;
 
 namespace rcproject.ViewModel
 {
-    public class CreateCompetitions : INotifyPropertyChanged
+    public partial class CreateCompetitions : ObservableObject
     {
-        public event PropertyChangedEventHandler? PropertyChanged = delegate { };
+       
+        [ObservableProperty]
+        string name;
+
+        [ObservableProperty]
+        string location;
+
+        [ObservableProperty]
+        DateTime date;
+
+        [ObservableProperty]    
+        TimeSpan time;
+
+        [ObservableProperty]
+        string joinCode;
+
+       
 
         public ObservableCollection<Competition> Competitions { get; set; }
-
-        private string name = string.Empty;
-        public string Name
-        {
-            get => name;
-            set
-            {
-                if (name != value)
-                {
-                    name = value;
-                    OnPropertyChanged(nameof(Name));
-                }
-            }
-        }
-
-        private string location = string.Empty;
-        public string Location
-        {
-            get => location;
-            set
-            {
-                if (location != value)
-                {
-                    location = value;
-                    OnPropertyChanged(nameof(Location));
-                    MapsImageUrl = GenerateMapsImageUrl(location);
-                    IsMapVisible= !string.IsNullOrEmpty(location);
-                }
-            }
-        }
-
-        private DateTime date = DateTime.Now;
-        public DateTime Date
-        {
-            get => date;
-            set
-            {
-                if (date != value)
-                {
-                    date = value;
-                    OnPropertyChanged(nameof(Date));
-                }
-            }
-        }
-
-        private TimeSpan time = DateTime.Now.TimeOfDay;
-        public TimeSpan Time
-        {
-            get => time;
-            set
-            {
-                if (time != value)
-                {
-                    time = value;
-                    OnPropertyChanged(nameof(Time));
-                }
-            }
-        }
-
-        private string joinCode = string.Empty;
-        public string JoinCode
-        {
-            get => joinCode;
-            set
-            {
-                if (joinCode != value)
-                {
-                    joinCode = value;
-                    OnPropertyChanged(nameof(JoinCode));
-                }
-            }
-        }
-
-        private string mapsImageUrl = string.Empty;
-        public string MapsImageUrl
-        {
-            get => mapsImageUrl;
-            set
-            {
-                if (mapsImageUrl != value)
-                {
-                    mapsImageUrl = value;
-                    OnPropertyChanged(nameof(MapsImageUrl));
-                }
-            }
-        }
-
-        private bool isMapVisible = false;
-        public bool IsMapVisible
-        {
-            get => isMapVisible;
-            set
-            {
-                if (isMapVisible != value)
-                {
-                    isMapVisible = value;
-                    OnPropertyChanged(nameof(IsMapVisible));
-                }
-            }
-        }
-
-        public Command CreateCompetitionCommand { get; }
 
         public CreateCompetitions()
         {
             Competitions = new ObservableCollection<Competition>();
-            CreateCompetitionCommand = new Command(OnCreateCompetition);
+
+            Date = DateTime.Now;
+            Time = DateTime.Now.TimeOfDay;
+           
+        
         }
 
-        private void OnCreateCompetition()
+        [RelayCommand]
+        private void AddCompetition()
         {
-            var competition = new Competition
+            var newCompetition = new Competition
             {
                 Name = Name,
                 Location = Location,
@@ -134,30 +61,8 @@ namespace rcproject.ViewModel
                 JoinCode = JoinCode
             };
 
-            Competitions.Add(competition);
-
-            // Clear input fields
-            Name = string.Empty;
-            Location = string.Empty;
-            Date = DateTime.Now;
-            Time = DateTime.Now.TimeOfDay;
-            JoinCode = string.Empty;
-            MapsImageUrl = string.Empty;
-            IsMapVisible = false;
-        }
-
-        private string GenerateMapsImageUrl(string location)
-        {
-            var apiKey = "YOUR_GOOGLE_MAPS_API_KEY";
-            var baseUrl = "https://maps.googleapis.com/maps/api/staticmap";
-            var url = $"{baseUrl}?center={Uri.EscapeDataString(location)}&zoom=15&size=600x300&maptype=roadmap&key={apiKey}";
-            return url;
-        }
-
-        protected void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            Competitions.Add(newCompetition);
+           
         }
     }
-
 }

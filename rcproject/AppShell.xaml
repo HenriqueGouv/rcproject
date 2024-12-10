@@ -9,9 +9,7 @@
     ForegroundColor="#006700"
     BackgroundColor="#FBFDFE"   
     FlyoutBackgroundColor="#FBFDFE"
-    TabBarBackgroundColor="#006700"
-    TabBarForegroundColor="#006700"
-    TabBarUnselectedColor="#006700"
+
     TabBarTitleColor="#006700"
     DisabledColor="#006700"
     UnselectedColor="#006700"
@@ -30,23 +28,13 @@
         </Grid>
     </Shell.TitleView>
 
-    <FlyoutItem Title="About Us" >
-        
-        <ShellContent ContentTemplate="{DataTemplate v:AboutUs}"/>
-        
-    </FlyoutItem>
+    <ShellContent Title="Create Competition" ContentTemplate="{DataTemplate v:CreateCompetition}" Route="CreateCompetition"/>
 
-    <FlyoutItem Title="Competitions" >
-        
-        <ShellContent ContentTemplate="{DataTemplate v:Competitions}"/>
-        
-    </FlyoutItem>
+    <ShellContent Title="Competitions" ContentTemplate="{DataTemplate v:Competitions}" Route="Competitions" />
+
+    <ShellContent Title="About Us" ContentTemplate="{DataTemplate v:AboutUs}" Route="AboutUs"/>
     
-    <FlyoutItem Title="Create Competition">
-        
-        <ShellContent ContentTemplate="{DataTemplate v:CreateCompetitions}"/>
-        
-    </FlyoutItem>
+    
 
     
 
