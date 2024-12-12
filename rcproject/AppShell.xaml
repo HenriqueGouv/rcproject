@@ -37,6 +37,14 @@
 
     <ShellContent ContentTemplate="{DataTemplate v:CompetitionDetailPage}" Route="CompetitionDetailPage" />
 
+    <ShellContent ContentTemplate="{DataTemplate v:Drivers}" Route="Drivers" />
+
+    <ShellContent ContentTemplate="{DataTemplate v:Scorecard}" Route="Scorecard" />
+
+    <ShellContent ContentTemplate="{DataTemplate v:Ruleset}" Route="Ruleset" />
+
+    <ShellContent ContentTemplate="{DataTemplate v:Leaderboard}" Route="Leaderboard" />
+
 
 
 

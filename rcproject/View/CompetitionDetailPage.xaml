@@ -9,22 +9,105 @@
         <vm:CompetitionDetailViewModel/>
     </ContentPage.BindingContext>
 
-    <Grid>
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <StackLayout Padding="20">
+            <Border StrokeShape="RoundRectangle 20" Stroke="#006700" Margin="5">
+                <Grid Padding="15" RowSpacing="20" ColumnSpacing="10">
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
 
-        <Label Text="{Binding SelectedCompetition.Date, StringFormat='{0:dd MMM yyyy}'}"                            
-   TextColor="#006700"
-   FontSize="16"
-   Grid.Row="0"
-   Grid.Column="1"/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
 
-       
+                    <Label Text="{Binding SelectedCompetition.Date, StringFormat='{0:dd MMM yyyy}'}"                            
+                           TextColor="#006700"
+                           FontSize="Body"
+                           Grid.Row="0"
+                           Grid.Column="0"/>
+
+                    <Label Text="{Binding SelectedCompetition.Time, StringFormat='{0:dd MMM yyyy}'}"                            
+                           TextColor="#006700"
+                           FontSize="Body"
+                           Grid.Row="0"
+                           Grid.Column="1"/>
+
+                    <Label Text="{Binding SelectedCompetition.Location, StringFormat='{0:dd MMM yyyy}'}"                            
+                           TextColor="#006700"
+                           FontSize="Body"
+                           Grid.Row="0"
+                           Grid.Column="2"/>
 
 
-    </Grid>
-   
+                    <Grid Grid.Row="3" Grid.ColumnSpan="3" Margin="10">
+                        <Border Stroke="#006700" StrokeThickness="2" StrokeShape="RoundRectangle 10" HorizontalOptions="FillAndExpand">
+                            <Button Text="Drivers" 
+                                    BackgroundColor="White" 
+                                    TextColor="#006700" 
+                                    FontSize="16"  
+                                    CornerRadius="10" 
+                                    HeightRequest="40"
+                                    Command="{Binding NavigateToDriversCommand}"
+                                    HorizontalOptions="FillAndExpand"/>
+                        </Border>
+                    </Grid>
+
+                    <Grid Grid.Row="4" Grid.ColumnSpan="3" Margin="10">
+                        <Border Stroke="#006700" StrokeThickness="2" StrokeShape="RoundRectangle 10" HorizontalOptions="FillAndExpand">
+                            <Button Text="Scorecard" 
+                                    BackgroundColor="White" 
+                                    TextColor="#006700" 
+                                    FontSize="16"  
+                                    CornerRadius="10" 
+                                    HeightRequest="40"
+                                    Command="{Binding NavigateToScorecardCommand}"
+                                    HorizontalOptions="FillAndExpand"/>
+                        </Border>
+                    </Grid>
+
+
+                    <Grid Grid.Row="5" Grid.ColumnSpan="3" Margin="10">
+                        <Border Stroke="#006700" StrokeThickness="2" StrokeShape="RoundRectangle 10" HorizontalOptions="FillAndExpand">
+                            <Button Text="Ruleset" 
+                                    BackgroundColor="White" 
+                                    TextColor="#006700" 
+                                    FontSize="16"  
+                                    CornerRadius="10" 
+                                    HeightRequest="40"                           
+                                    Command="{Binding NavigateToRulesetCommand}"
+                                    HorizontalOptions="FillAndExpand"/>
+                        </Border>
+                    </Grid>
+
+                    <Grid Grid.Row="6" Grid.ColumnSpan="3" Margin="10">
+                        <Border Stroke="#006700" StrokeThickness="2" StrokeShape="RoundRectangle 10" HorizontalOptions="FillAndExpand">
+                            <Button Text="Leaderboard" 
+                                    BackgroundColor="White" 
+                                    TextColor="#006700" 
+                                    FontSize="16"  
+                                    CornerRadius="10" 
+                                    HeightRequest="40"
+                                    Command="{Binding NavigateToLeaderboardCommand}"
+                                    HorizontalOptions="FillAndExpand"/>
+                        </Border>
+                    </Grid>
+                </Grid>
+            </Border>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

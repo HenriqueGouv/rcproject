@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using rcproject.Model;
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,32 @@ namespace rcproject.ViewModel
         public DateTime Date => SelectedCompetition?.Date ?? DateTime.Now;
         public TimeSpan Time => SelectedCompetition?.Time ?? TimeSpan.Zero;
         public string Location => SelectedCompetition?.Location;
+
+
+
+        [RelayCommand]
+        private async Task NavigateToDrivers()
+        {
+            await Shell.Current.GoToAsync("///Drivers");
+        }
+
+        [RelayCommand]
+        private async Task NavigateToScorecard()
+        {
+            await Shell.Current.GoToAsync("///Scorecard");
+        }
+
+        [RelayCommand]
+        private async Task NavigateToRuleset()
+        {
+            await Shell.Current.GoToAsync("///Ruleset");
+        }
+
+        [RelayCommand]
+        private async Task NavigateToLeaderboard()
+        {
+            await Shell.Current.GoToAsync("///Leaderboard");
+        }
 
     }
 }

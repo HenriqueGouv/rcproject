@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>rcproject</name>
+    </assembly>
+    <members>
+        <member name="T:rcproject.ViewModel.CompetitionDetailViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:rcproject.ViewModel.CompetitionDetailViewModel.navigateToDriversCommand">
+            <summary>The backing field for <see cref="P:rcproject.ViewModel.CompetitionDetailViewModel.NavigateToDriversCommand"/>.</summary>
+        </member>
+        <member name="P:rcproject.ViewModel.CompetitionDetailViewModel.NavigateToDriversCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:rcproject.ViewModel.CompetitionDetailViewModel.NavigateToDrivers"/>.</summary>
+        </member>
+        <member name="F:rcproject.ViewModel.CompetitionDetailViewModel.navigateToScorecardCommand">
+            <summary>The backing field for <see cref="P:rcproject.ViewModel.CompetitionDetailViewModel.NavigateToScorecardCommand"/>.</summary>
+        </member>
+        <member name="P:rcproject.ViewModel.CompetitionDetailViewModel.NavigateToScorecardCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:rcproject.ViewModel.CompetitionDetailViewModel.NavigateToScorecard"/>.</summary>
+        </member>
+        <member name="F:rcproject.ViewModel.CompetitionDetailViewModel.navigateToRulesetCommand">
+            <summary>The backing field for <see cref="P:rcproject.ViewModel.CompetitionDetailViewModel.NavigateToRulesetCommand"/>.</summary>
+        </member>
+        <member name="P:rcproject.ViewModel.CompetitionDetailViewModel.NavigateToRulesetCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:rcproject.ViewModel.CompetitionDetailViewModel.NavigateToRuleset"/>.</summary>
+        </member>
+        <member name="F:rcproject.ViewModel.CompetitionDetailViewModel.navigateToLeaderboardCommand">
+            <summary>The backing field for <see cref="P:rcproject.ViewModel.CompetitionDetailViewModel.NavigateToLeaderboardCommand"/>.</summary>
+        </member>
+        <member name="P:rcproject.ViewModel.CompetitionDetailViewModel.NavigateToLeaderboardCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:rcproject.ViewModel.CompetitionDetailViewModel.NavigateToLeaderboard"/>.</summary>
+        </member>
+        <member name="T:rcproject.ViewModel.CreateCompetitions">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:rcproject.ViewModel.CreateCompetitions.Name">
+            <inheritdoc cref="F:rcproject.ViewModel.CreateCompetitions.name"/>
+        </member>
+        <member name="P:rcproject.ViewModel.CreateCompetitions.Location">
+            <inheritdoc cref="F:rcproject.ViewModel.CreateCompetitions.location"/>
+        </member>
+        <member name="P:rcproject.ViewModel.CreateCompetitions.Date">
+            <inheritdoc cref="F:rcproject.ViewModel.CreateCompetitions.date"/>
+        </member>
+        <member name="P:rcproject.ViewModel.CreateCompetitions.Time">
+            <inheritdoc cref="F:rcproject.ViewModel.CreateCompetitions.time"/>
+        </member>
+        <member name="P:rcproject.ViewModel.CreateCompetitions.JoinCode">
+            <inheritdoc cref="F:rcproject.ViewModel.CreateCompetitions.joinCode"/>
+        </member>
+        <member name="F:rcproject.ViewModel.CreateCompetitions.addCompetitionCommand">
+            <summary>The backing field for <see cref="P:rcproject.ViewModel.CreateCompetitions.AddCompetitionCommand"/>.</summary>
+        </member>
+        <member name="P:rcproject.ViewModel.CreateCompetitions.AddCompetitionCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:rcproject.ViewModel.CreateCompetitions.AddCompetition"/>.</summary>
+        </member>
+        <member name="F:rcproject.ViewModel.CreateCompetitions.removeCompetitionCommand">
+            <summary>The backing field for <see cref="P:rcproject.ViewModel.CreateCompetitions.RemoveCompetitionCommand"/>.</summary>
+        </member>
+        <member name="P:rcproject.ViewModel.CreateCompetitions.RemoveCompetitionCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:rcproject.ViewModel.CreateCompetitions.RemoveCompetition(rcproject.Model.Competition)"/>.</summary>
+        </member>
+        <member name="F:rcproject.ViewModel.CreateCompetitions.navigateToCreateCompetitionCommand">
+            <summary>The backing field for <see cref="P:rcproject.ViewModel.CreateCompetitions.NavigateToCreateCompetitionCommand"/>.</summary>
+        </member>
+        <member name="P:rcproject.ViewModel.CreateCompetitions.NavigateToCreateCompetitionCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:rcproject.ViewModel.CreateCompetitions.NavigateToCreateCompetition"/>.</summary>
+        </member>
+        <member name="F:rcproject.ViewModel.CreateCompetitions.navigateToCompetitionDetailCommand">
+            <summary>The backing field for <see cref="P:rcproject.ViewModel.CreateCompetitions.NavigateToCompetitionDetailCommand"/>.</summary>
+        </member>
+        <member name="P:rcproject.ViewModel.CreateCompetitions.NavigateToCompetitionDetailCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:rcproject.ViewModel.CreateCompetitions.NavigateToCompetitionDetail(rcproject.Model.Competition)"/>.</summary>
+        </member>
+        <member name="T:rcproject.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Location">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Location" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Date">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Date" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Time">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Time" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.JoinCode">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "JoinCode" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Name">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Name" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Location">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Location" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Date">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Date" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Time">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Time" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.JoinCode">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "JoinCode" generated properties.</summary>
+        </member>
+    </members>
+</doc>
