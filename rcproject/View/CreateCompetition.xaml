@@ -10,7 +10,7 @@
         <vm:CreateCompetitions/>
     </ContentPage.BindingContext>
 
-    <ScrollView VerticalScrollBarVisibility="Default">
+    <ScrollView VerticalScrollBarVisibility="Never">
 
         <Grid RowDefinitions="*,*,*,*,*,*" Padding="20" ColumnSpacing="20" RowSpacing="20">
 

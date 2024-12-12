@@ -5,39 +5,65 @@
              xmlns:v="clr-namespace:rcproject.View"
              Title="UKRCCA" 
              >
-    <VerticalStackLayout>
-        <Image 
-               Source="aboutus.jpg" 
-               Margin="2"
-               Aspect="Fill"
+
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <Grid RowSpacing="5">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+
+            </Grid.RowDefinitions>
+            <Image 
+                Source="aboutus.jpg" 
+                Aspect="Fill"
+                Grid.Row="0"
+                Margin="0"            
             />
-        <Label Text="Welcome to UKRCCA!"
+            <Label Text="Welcome to the UKRCCA!"
                    TextColor="#006700"
-                   FontSize="24"
-                   HorizontalOptions="Center"/>
+                   FontSize="Subtitle"
+                   Margin="10,0,0,0"
+                   Padding="5"
+                   Grid.Row="1"/>
 
-        <Label Text="Your Ultimate Rock Crawling Competition Platform"
+            <Label Text="Your Ultimate Rock Crawling Competition Platform"
                    TextColor="#006700"
-                   FontSize="18"
-                   HorizontalTextAlignment="Center"/>
+                   FontSize="Body"     
+                   Padding="5"
+                   Margin="10,0,0,0"
+                   Grid.Row="2"/>
 
-        <Label Text="Create and manage rock crawling competitions with ease. Our platform provides comprehensive tools for:"
+            <Label Text="Create and manage rock crawling competitions with ease. Our platform provides comprehensive tools for:"
                    TextColor="#006700"
-                   Margin="0,10,0,0"
-               HorizontalTextAlignment="Center"/>
+                   FontSize="Body"
+                   Margin="10,0,0,0"
+                   Padding="5"
+                   Grid.Row="3"/>
 
-        <Label Text="• Competition Setup and Management&#10;• Participant Registration&#10;• Score Tracking&#10;• Event Scheduling;"
+            <Label Text="• Competition Setup and Management&#10;• Score Tracking&#10;• Event Scheduling;"
                    TextColor="#006700"
-               HorizontalTextAlignment="Center"/>
+                   Grid.Row="4"
+                   Margin="10,0,0,0"
+                   Padding="5"
+                   FontSize="Body"/>
 
-        <Label Text="Join the growing community of rock crawling enthusiasts and competition organizers!"
+            <Label Text="Join the growing community of rock crawling enthusiasts and competition organizers!"
                    TextColor="#006700"
-                   Margin="0,10,0,0"
-               HorizontalTextAlignment="Center"/>
-        <Image 
-        Source="rctrucks15.jpg" 
-        Margin="2"
-        Aspect="Fill"
-     />
-    </VerticalStackLayout>
+                   FontSize="Body"
+                   Margin="10,0,0,10"
+                   Padding="5"
+                   Grid.Row="5"/>
+            <Image 
+                Source="rctrucks15.jpg" 
+                Aspect="Fill"
+                Grid.Row="6"
+            />
+        </Grid>
+    </ScrollView>
 </ContentPage>

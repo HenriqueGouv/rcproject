@@ -1,0 +1,32 @@
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using rcproject.Model;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace rcproject.ViewModel
+{
+    [QueryProperty(nameof(SelectedCompetition), "Competition")]
+    public partial class CompetitionDetailViewModel : ObservableObject
+    {
+        private Competition selectedCompetition;
+
+        public Competition SelectedCompetition
+        {
+            get => selectedCompetition;
+            set
+            {
+                SetProperty(ref selectedCompetition, value);
+              
+            }
+        }
+
+        public string Name => SelectedCompetition?.Name;
+        public DateTime Date => SelectedCompetition?.Date ?? DateTime.Now;
+        public TimeSpan Time => SelectedCompetition?.Time ?? TimeSpan.Zero;
+        public string Location => SelectedCompetition?.Location;
+
+    }
+}

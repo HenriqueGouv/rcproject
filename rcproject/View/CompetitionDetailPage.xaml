@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rcproject.View.CompetitionDetailPage"
+             xmlns:vm="clr-namespace:rcproject.ViewModel"
+             >
+
+    <ContentPage.BindingContext>
+        <vm:CompetitionDetailViewModel/>
+    </ContentPage.BindingContext>
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Text="{Binding SelectedCompetition.Date, StringFormat='{0:dd MMM yyyy}'}"                            
+   TextColor="#006700"
+   FontSize="16"
+   Grid.Row="0"
+   Grid.Column="1"/>
+
+       
+
+
+    </Grid>
+   
+</ContentPage>

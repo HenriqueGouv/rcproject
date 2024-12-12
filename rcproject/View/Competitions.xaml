@@ -9,57 +9,94 @@
     <ContentPage.BindingContext>
         <vm:CreateCompetitions />
     </ContentPage.BindingContext>
-    
-    <CollectionView ItemsSource="{Binding Competitions}" Margin="15">
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <StackLayout>
-                    <Border StrokeShape="RoundRectangle 20" Stroke="#006700" Margin="10">
-                        <Grid Padding="15">
 
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                            </Grid.RowDefinitions>
+    <Grid RowDefinitions="*,Auto">
+        <CollectionView ItemsSource="{Binding Competitions}" Margin="15" VerticalScrollBarVisibility="Never">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Border StrokeShape="RoundRectangle 20" Stroke="#006700" Margin="10">
+                            <Grid Padding="15" RowSpacing="5" HorizontalOptions="End">
 
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
-                                <ColumnDefinition Width="Auto"/>
-                            </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:CreateCompetitions}}, Path=NavigateToCompetitionDetailCommand}"
+                                                          CommandParameter="{Binding .}" />
+                                </Grid.GestureRecognizers>
 
 
-                            <Label Text="{Binding Name}"
-                        TextColor="#006700"
-                        FontSize="16"
-                        Grid.Row="0"
-                        Grid.Column="1"/>
+                                <Label Text="{Binding Name}"
+                                   TextColor="#006700"
+                                   FontSize="16"
+                                   Grid.Row="0"
+                                   Grid.Column="1"/>
 
-                            <Label Text="{Binding Date, StringFormat='{0:dd MMM yyyy}'}"                            
-                           TextColor="#006700"
-                           FontSize="16"
-                           Grid.Row="1"
-                           Grid.Column="1"/>
+                                <Label Text="{Binding Date, StringFormat='{0:dd MMM yyyy}'}"                            
+                                   TextColor="#006700"
+                                   FontSize="16"
+                                   Grid.Row="1"
+                                   Grid.Column="1"/>
 
-                            <Label Text="{Binding Time}"
-                        TextColor="#006700"
-                        FontSize="16"
-                        Grid.Row="2"
-                        Grid.Column="1"/>
+                                <Label Text="{Binding Time}"
+                                   TextColor="#006700"
+                                   FontSize="16"
+                                   Grid.Row="2"
+                                   Grid.Column="1"/>
 
-                            <Label Text="{Binding Location}"
-                        TextColor="#006700"
-                        FontSize="16"
-                        Grid.Row="3"
-                        Grid.Column="1"/>
+                                <Label Text="{Binding Location}"
+                                   TextColor="#006700"
+                                   FontSize="16"
+                                   Grid.Row="3"
+                                   Grid.Column="1"/>
 
-                        </Grid>
-                    </Border>
-                </StackLayout>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+                                <Button 
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:CreateCompetitions}}, Path=RemoveCompetitionCommand}"
+                                    CommandParameter="{Binding .}"
+                                    Grid.Row="4"
+                                    HorizontalOptions="End"
+                                    BackgroundColor="Transparent"
+                                    VerticalOptions="End"
+                                    Grid.Column="1"
+                                    Margin="0"
+                                    Padding="0"                                       
+                                    >
+                                    <Button.ImageSource>
+                                        <FontImageSource Glyph="&#xf00d;"
+                                                         FontFamily="FontAwesomeSolid"
+                                                         Color="#006700"
+                                                         Size="30"/>
+                                    </Button.ImageSource>
+                                </Button>
+                            </Grid>
+                        </Border>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
 
-   
+        <Button Text="Create Competition +" 
+                BackgroundColor="#006700" 
+                TextColor="White" 
+                FontSize="16"  
+                CornerRadius="10"  
+                Grid.Row="1"  
+                HeightRequest="10"
+                Margin="20,0,20,20"
+                Command="{Binding NavigateToCreateCompetitionCommand}"
+          />
+    </Grid>
+
+
 </ContentPage>

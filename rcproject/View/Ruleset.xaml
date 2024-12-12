@@ -2,11 +2,482 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="rcproject.View.Ruleset"
-             Title="Ruleset">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             >
+
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <Grid Padding="15" Margin="10" RowSpacing="10">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+
+            <Label Text="UKRCCA Light Ruleset"
+                   TextColor="#006700"
+                   FontSize="Subtitle"
+                   Grid.Row="0" />
+
+            <Label Text="Introduction"
+                   TextColor="#006700"
+                   FontSize="Small"
+                   Grid.Row="1"/>
+
+            <Label Text="These rules are designed to be used at all UK RC Crawler events. They are designed to be branded by whichever event uses them, but gives a consistent approach to rules for everyone."
+                   TextColor="Black"
+                   FontSize="Body"
+                   Grid.Row="2"/>
+
+
+            <Label Text="Example: If the UK Nationals were taking place, they choose to use this ruleset and replace the ‘EVENT NAME HERE’ with their Logo and title."
+                   TextColor="Black"
+                   FontSize="Body"
+                   Grid.Row="3"/>
+
+            <Label Text="Requirements"
+                   TextColor="#006700"
+                   FontSize="Small"
+                   Grid.Row="4"/>
+
+            <Label Text="- Ready To Run (RTR)  or competition RC Crawler with 2.4ghz transmitter and receiver."
+                   TextColor="Black"
+                   FontSize="Body"
+                   Grid.Row="5"/>
+
+            <Label Text="- Lipo or NIMH battery pack"
+                   TextColor="Black"
+                   FontSize="Body"
+                   Grid.Row="6"/>
+
+            <Label Text="Scoring Penalities"
+                   TextColor="#006700"
+                   FontSize="Small"
+                   Grid.Row="7"/>
+
+            <Label Text="Points"
+                   TextColor="#006700"
+                   FontSize="Micro"
+                   Grid.Row="8"/>
+
+            <Label Text="Gate Marker: 10 points"
+                   TextColor="Black"
+                   FontSize="Body"
+                   Grid.Row="9"/>
+
+            <Label Text="Boundary Marker: 10 points"
+                   TextColor="Black"
+                   FontSize="Body"
+                   Grid.Row="10"/>
+
+            <Label Text="Vehicle Touch (including Repair): 10 points"
+                   TextColor="Black"
+                   FontSize="Body"
+                   Grid.Row="11"/>
+
+            <Label Text="Vehicle Reposition Past Gate: 20 points"
+                   TextColor="Black"
+                   FontSize="Body"
+                   Grid.Row="12"/>
+
+            <Label Text="Wrong Gate Direction: 10 points"
+                   TextColor="Black"
+                   FontSize="Body"
+                   Grid.Row="13"/>
+
+            <Label Text="DNF (Did not finish) or timeout + 20 points x remaining gates"
+                   TextColor="Black"
+                   FontSize="Body"
+                   Grid.Row="14"/>
+
+            <Label Text="DNS (did not start): 200 points"
+                   TextColor="Black"
+                   FontSize="Body"
+                   Grid.Row="15"/>
+
+            <Label Text="Gate Marker (10 points per each hit / straddle)"
+                   TextColor="#006700"
+                   FontSize="Micro"
+                   Grid.Row="16"/>
+
+            <Label Text="Each gate will have two gate markers. Ten Points are given when all 4 wheels do not travel between gate markers or any part of the vehicle touches a gate marker (straddling or touching)."
+                   TextColor="Black"
+                   FontSize="Body"
+                   Grid.Row="17"/>
+
+            <Label Text="A gate marker will remain “LIVE” until hit, straddled or progressed then it will be deemed a “DEAD” Gate. Gate markers that are moved by anything other than the vehicle’s actions will be replaced immediately before the driver is allowed to continue."
+                   TextColor="Black"
+                   FontSize="Body"
+                   Grid.Row="18"/>
+
+            <Label Text="If a gate marker is touched or straddled a penalty of ten points will be applied and the gate becomes “DEAD” but all other penalties will apply until progress is made. The combined penalties at the point of progress will be added together and the progress points deducted up to a maximum of 20 pts for that gate. Every gate must be progressed in order before moving onto the next. See ruling 1.9. At any point during a gate attempt, a driver can elect to “Reposition Past the gate” for a total gate score of 20 pts. See ruling 1.8"
+                   TextColor="Black"
+                   FontSize="Body"
+                   Grid.Row="19"/>
+
+            <Label Text="If a gate is hit out of sequence and not already dead or progressed, then a penalty score of ten points is added to that gate and the gate deemed dead but not progressed."
+                   TextColor="Black"
+                   FontSize="Body"
+                   Grid.Row="20"/>
+
+            <Label Text="Straddling occurs when after entering a gate, a tyre touches the ground outside of the gate limits so that a gate marker is under the rig. Rule applies to tyres only, not body etc. Bonus Gates: Bonus gates are extra gates placed anywhere on the course by course designers for bonus credit. Max 3 per course."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="21"/>
+
+            <Label Text="All penalties apply during the bonus attempt to the regular score even if the bonus is not completed or aborted. Bonus Gates are run in the intended direction set by the course designer. Bonus gates are live for the entire run until progressed or “killed”, whether attempted or not."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="22"/>
+
+            <Label Text="Boundary Marker (10 points for each touch)"
+                   TextColor="#006700"
+                   FontSize="Micro"
+                   Grid.Row="23"/>
+
+
+            <Label Text="Points are given when any part of the vehicle touches or crosses a boundary marker. Once a boundary marker is touched the boundary is dead and driving may continue and the boundary may be crossed without further penalty until the vehicle is completely inside the confines of the boundary again at which point it becomes LIVE again."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="24"/>
+
+            <Label Text="Vehicle Touch Including repair (10 points)"
+                   TextColor="#006700"
+                   FontSize="Micro"
+                   Grid.Row="25"/>
+
+            <Label Text="At any time the vehicle is touched by the driver or their spotter, ten points are awarded and repositioned to the last progressed gate. The action of a touch e.g. undertaking a body refit does not stop the clock but once complete the judge will stop time and the vehicle is then moved by the judge to the previously cleared gate with the rear axle aligned to that gate. If the vehicle cannot be aligned to the gate due to course design, the judge will reposition the vehicle to the next stable location after the cleared gate. This location will be used for all drivers. Note: All gates for progress are still “live” unless a gate has already been deemed “dead”. An on course repair is a single touch but the timer continues.Example: Body replacement, battery replacement, mechanical repair,driving into yourself etc."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="26"/>
+
+            <Label Text="Vehicle Touches: include but are not limited to: repairs, repositions, and touching of the rig by the driver or spotter including driving or rolling into yourself or the spotter."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="27"/>
+
+            <Label Text="On Course Repairs: Must be completed on the course. Repairs must be made within the course time, while the course timer continues to run. Once repairs are completed, the timer is stopped and vehicle is repositioned to the previous gate cleared. If repairs cannot be made within the course time, the driver is given a timed out score. There are no restrictions on whom or how the repairs are made. Repairs are a single touch." 
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="28"/>
+
+            <Label Text="Off Course Repairs without clock running (NOT Allowed) if you have not started a later start time may be accommodated."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="29"/>
+
+            <Label Text="Vehicle Out of Spec: If the Judge has reason to believe a vehicle is out of spec during a course run, he may call time to stop. At that point, no additional inputs may be given by the driver to the vehicle via touch or radio control. The Judge must mark the vehicle’s location and perform a tech inspection in the specified tech area (same manner as all other tech inspections). If the vehicle has been deemed within spec, the driver and vehicle will return to the location marked by the judge and the clock will start once again. If the vehicle is now out of spec and the Judge has determined that the vehicle has gained an advantage, the driver is disqualified."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="30"/>
+
+            <Label Text="If the body becomes detached from the rig the driver must stop and reattach it before progressing to the next gate. The clock will NOT stop for the body to be refitted – only for the reposition. A touch penalty will apply and the vehicle will be returned to the previous gate by the judge."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="31"/>
+
+            <Label Text="Vehicle Reposition Past Gate (20 points)"
+                   TextColor="#006700"
+                   FontSize="Micro"
+                   Grid.Row="32"/>
+
+            <Label Text="If at any point you believe you cannot make a gate you may reposition past for a penalty of 20 points. Lifting past means you progress with 20 penalty points. As 20 points is the maximum points you can score per gate,even if you have incurred points already on that gate and choose to lift past the gate, you will still score only 20 points. Vehicle is moved by the judge (stopping the clock) past the gate with the rear axle aligned to that gate. Gate is deemed DEAD"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="33"/>
+
+            <Label Text="Wrong Gate Direction (10 points)"
+                   TextColor="#006700"
+                   FontSize="Micro"
+                   Grid.Row="34"/>
+
+            <Label Text="Gates must be cleared in their intended direction and sequence. If the vehicle enters, hits or straddles a live gate in the wrong direction, or a live gate out of sequence, this will result in a ten point penalty and the judge will stop time. The vehicle is then moved back by the judge to the previously cleared gate with the rear axle aligned to that gate. If the vehicle cannot be aligned to the gate due to course design, the judge will reposition the vehicle to the next stable location after the cleared gate. This location will be used for all drivers. Once progress is awarded for a specific gate, it can be passed through in any sequence or direction without penalty."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="35"/>
+
+            <Label Text="DNF (Did not finish) or Timeout (+20 points x remaining gates)"
+                   TextColor="#006700"
+                   FontSize="Micro"
+                   Grid.Row="36"/>
+
+            <Label Text="The maximum points per gate is 20. You cannot point out."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="37"/>
+
+            <Label Text="Every driver has six(6) minutes to complete each course unless otherwise specified in the Driver’s briefing. Time will start once any part of the vehicle enters the course. Time will stop when the last gate is progressed. Once the time has expired the driver is “timed out”. The scored run has ceased and a time of 6 mins will be recorded with time out penalties. 20 pts for each unprogressed non bonus gate will be applied."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="38"/>
+
+            <Label Text="Points are given anytime a driver cannot complete a course for any reason e.g. 'timed out' at the maximum value of 20 points for each unprogressed, NON BONUS gate. E.g. If a driver times out on gate 8, gate 8,9 and 10 would each score a maximum 20 points. If you time out on a bonus gate the points incurred on that gate to that point count to a maximum of 20 plus 20 for each remaining incomplete NON BONUS gate)"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="39"/>
+
+            <Label Text="A driver or judge may call for time to stop so that he or she may safely reposition themselves on the course. If the driver calls for this, the vehicle must not be under power. If the judge calls a stop the vehicle must be stopped by the driver. This time shall be used for the purpose of safety and may not be used to survey the course or for any other advantage. The judge has the right to restart time at any point. Most typically, the timer will resume when the competitor resumes driving. A judge may also call a stop of time to reposition themselves to make a more accurate call, drivers may also request a stop of time for this same reason."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="40"/>
+
+
+            <Label Text="Example: “Stop time. Hey Judge I’m going to approach this gate from this direction and want to make sure you have a good view of my car, do you want to reposition?”"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="41"/>
+
+            <Label Text="DNS (Did not start)"
+                   TextColor="#006700"
+                   FontSize="Micro"
+                   Grid.Row="42"/>
+
+            <Label Text="If you fail to start in your allotted position or before the course is closed a maximum 200 pts may be applied at the discretion of the Judge."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="43"/>
+
+
+            <Label Text="Pre-Running the course"
+                   TextColor="#006700"
+                   FontSize="Micro"
+                   Grid.Row="44"/>
+
+            <Label Text="Pre-running a course is immediate disqualification from that category."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="45"/>
+
+            <Label Text="Vehicle Requirenments"
+                   TextColor="#006700"
+                   FontSize="Small"
+                   Grid.Row="46"/>
+
+            <Label Text="General"
+                   TextColor="#006700"
+                   FontSize="Micro"
+                   Grid.Row="47"/>
+
+            <Label Text="Any truck is valid in this ruleset, including the Ready to Run you just purchased."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="48"/>
+
+            <Label Text="Classes"
+                   TextColor="#006700"
+                   FontSize="Small"
+                   Grid.Row="49"/>
+
+            <Label Text="UK Scale (UK-1)"
+                   TextColor="#006700"
+                   FontSize="Micro"
+                   Grid.Row="50"/>
+
+            <Label Text="Vehicles must run:"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="51"/>
+
+            <Label Text="A body that extends to a minimum of half the width of the tyres on each side."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="52"/>
+
+            <Label Text="A front and rear bumper with a width that is at least 90% of the body and is mounted in front of the body (front bumper) and behind the body (rear bumper)."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="53"/>
+
+            <Label Text="No larger than 4.19” tyres (from the manufacturers description)"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="54"/>
+
+            <Label Text="A body that represents a scale road registered vehicle"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="55"/>
+
+            <Label Text="All electrics must be covered when viewed from the side or above"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="56"/>
+
+            <Label Text="Chassis mounted servo"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="57"/>
+
+            <Label Text="No dig or 4 wheel steer allowed"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="58"/>
+
+            <Label Text="EXAMPLE VEHICLE - RC4WD TF2 / FTX Outback Tracker"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="59"/>
+
+            <Label Text="UK Scale (UK-2)"
+                   TextColor="#006700"
+                   FontSize="Micro"
+                   Grid.Row="60"/>
+
+            <Label Text="Vehicles must run:"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="61"/>
+
+            <Label Text="A body that is wider than the chassis rails"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="62"/>
+
+            <Label Text="A front bumper that is wider than the chassis rails and greater than 50% of the track width of the vehicle.."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="63"/>
+
+            <Label Text="A rear bumper that is wider than the chassis rails and greater than 50% of the track width of the vehicle."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="64"/>
+
+            <Label Text="No larger that 4.75” tyres (from the manufacturers description"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="65"/>
+
+            <Label Text="No dig or 4 wheel steer allowed"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="66"/>
+
+            <Label Text="All electrics must be covered when viewed from above"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="67"/>
+
+            <Label Text="EXAMPLE VEHICLE - TRAXXAS TRX4/AXIAL SCX10iii"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="68"/>
+
+            <Label Text="UK Scale (UK-3)"
+                   TextColor="#006700"
+                   FontSize="Micro"
+                   Grid.Row="69"/>
+
+            <Label Text="ESC and motor must be covered when viewed from above."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="70"/>
+
+            <Label Text="All tyre sizes  and types allowed"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="71"/>
+
+            <Label Text="4 wheel steer allowed"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="72"/>
+
+            <Label Text="Dig allowed"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="73"/>
+
+            <Label Text="EXAMPLE VEHICLE - Axial Capra 4WS"
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="74"/>
+
+            <Label Text="Have fun"
+                   TextColor="#006700"
+                   FontSize="Small"
+                   Grid.Row="75"/>
+
+            <Label Text="These rules have been written so that everyone that attends any RC Crawling event will be welcomed. Event coordinators may modify any rule to fit their event and the decision of the event coordinators is final. We are all here to have fun and enjoy tiny trucking with fellow hobbyists. Let's keep it this way."
+                   FontSize="Body"
+                   TextColor="Black"
+                   Grid.Row="76"/>
+            
+        </Grid>
+    </ScrollView>
 </ContentPage>

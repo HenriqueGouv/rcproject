@@ -1,5 +1,8 @@
 runtimes\win-x64\native\WebView2Loader.dll
 FluentUI.cs
+Font Awesome 6 Brands-Regular-400.otf
+Font Awesome 6 Free-Regular-400.otf
+Font Awesome 6 Free-Solid-900.otf
 OpenSans-Regular.ttf
 OpenSans-Semibold.ttf
 aboutus.scale-100.jpg
@@ -49,6 +52,7 @@ appiconWideTile.scale-125.png
 appiconWideTile.scale-150.png
 appiconWideTile.scale-200.png
 appiconWideTile.scale-400.png
+bin.scale-100.png
 dotnet_bot.scale-100.png
 dotnet_bot.scale-125.png
 dotnet_bot.scale-150.png

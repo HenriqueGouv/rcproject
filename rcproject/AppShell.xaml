@@ -28,15 +28,20 @@
         </Grid>
     </Shell.TitleView>
 
+
+    <ShellContent Title="About Us" ContentTemplate="{DataTemplate v:AboutUs}" Route="AboutUs"/>
+
     <ShellContent Title="Create Competition" ContentTemplate="{DataTemplate v:CreateCompetition}" Route="CreateCompetition"/>
 
     <ShellContent Title="Competitions" ContentTemplate="{DataTemplate v:Competitions}" Route="Competitions" />
 
-    <ShellContent Title="About Us" ContentTemplate="{DataTemplate v:AboutUs}" Route="AboutUs"/>
-    
-    
+    <ShellContent ContentTemplate="{DataTemplate v:CompetitionDetailPage}" Route="CompetitionDetailPage" />
 
-    
+
+
+
+
+
 
 </Shell>
 

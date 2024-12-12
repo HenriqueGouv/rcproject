@@ -53,11 +53,11 @@ build_metadata.AdditionalFiles.ManifestResourceName = rcproject.View.AboutUs.xam
 build_metadata.AdditionalFiles.TargetPath = View\AboutUs.xaml
 build_metadata.AdditionalFiles.RelativePath = View\AboutUs.xaml
 
-[C:/Users/jspal/Source/Repos/rcproject1/rcproject/View/Competition.xaml]
+[C:/Users/jspal/Source/Repos/rcproject1/rcproject/View/CompetitionDetailPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = rcproject.View.Competition.xaml
-build_metadata.AdditionalFiles.TargetPath = View\Competition.xaml
-build_metadata.AdditionalFiles.RelativePath = View\Competition.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = rcproject.View.CompetitionDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\CompetitionDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\CompetitionDetailPage.xaml
 
 [C:/Users/jspal/Source/Repos/rcproject1/rcproject/View/Competitions.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

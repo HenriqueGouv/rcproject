@@ -64,5 +64,31 @@ namespace rcproject.ViewModel
             Competitions.Add(newCompetition);
            
         }
+
+        [RelayCommand]
+        private void RemoveCompetition(Competition competition)
+        {
+            if (Competitions.Contains(competition))
+            {
+                Competitions.Remove(competition);
+            }
+        }
+
+        [RelayCommand]
+        private async Task NavigateToCreateCompetition()
+        {
+            await Shell.Current.GoToAsync("///CreateCompetition");
+        }
+
+        [RelayCommand]
+        private async Task NavigateToCompetitionDetail(Competition competition)
+        {
+            var navigationParameter = new Dictionary<string, object>
+            {
+                {"Competition", competition }
+            };
+            await Shell.Current.GoToAsync("///CompetitionDetailPage", navigationParameter);
+        }
+
     }
 }
