@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    x:Class="rcproject.View.JoinPopup">
+
+    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent">
+        <ScrollView VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="300">
+            <Grid VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="300">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Border StrokeShape="RoundRectangle 10" BackgroundColor="White" Padding="20" StrokeThickness="2" Stroke="#006700" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="300">
+                <StackLayout Spacing="10">
+                    <Entry Placeholder="Enter your name" Text="{Binding UserName}" BackgroundColor="White" PlaceholderColor="#006700" Grid.Row="0" TextColor="#006700"/>
+                    <Entry Placeholder="Enter join code" Text="{Binding JoinCode}" IsPassword="True" BackgroundColor="White" PlaceholderColor="#006700" Grid.Row="1" TextColor="#006700"/>
+                    <Button Text="Join" Command="{Binding JoinCommand}" BackgroundColor="#006700" TextColor="White" Grid.Row="2"/>
+                    <Label Text="{Binding ErrorMessage}" TextColor="Red" IsVisible="{Binding HasError}" Grid.Row="3"/>
+                </StackLayout>
+            </Border>
+    </Grid>
+    </ScrollView>
+    </Grid>
+</toolkit:Popup>

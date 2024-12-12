@@ -16,7 +16,7 @@
                 <DataTemplate>
                     <StackLayout>
                         <Border StrokeShape="RoundRectangle 20" Stroke="#006700" Margin="10">
-                            <Grid Padding="15" RowSpacing="5" HorizontalOptions="End">
+                            <Grid Padding="10" RowSpacing="5" HorizontalOptions="End">
 
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto"/>

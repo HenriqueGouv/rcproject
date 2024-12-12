@@ -9,10 +9,9 @@
         <vm:CompetitionDetailViewModel/>
     </ContentPage.BindingContext>
 
-    <ScrollView VerticalScrollBarVisibility="Never">
         <StackLayout Padding="20">
-            <Border StrokeShape="RoundRectangle 20" Stroke="#006700" Margin="5">
-                <Grid Padding="15" RowSpacing="20" ColumnSpacing="10">
+            <Border StrokeShape="RoundRectangle 20" Stroke="#006700" StrokeThickness="2" Margin="5" HeightRequest="380">
+                <Grid Padding="15" RowSpacing="10" ColumnSpacing="10">
 
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
@@ -30,31 +29,34 @@
                     </Grid.RowDefinitions>
 
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Label Text="{Binding SelectedCompetition.Date, StringFormat='{0:dd MMM yyyy}'}"                            
+                    <Label Text="{Binding SelectedCompetition.Date, StringFormat='{0:dd MMM yy}'}"                            
                            TextColor="#006700"
                            FontSize="Body"
                            Grid.Row="0"
+                           HorizontalOptions="Center"
                            Grid.Column="0"/>
 
                     <Label Text="{Binding SelectedCompetition.Time, StringFormat='{0:dd MMM yyyy}'}"                            
                            TextColor="#006700"
                            FontSize="Body"
                            Grid.Row="0"
+                           HorizontalOptions="Center"
                            Grid.Column="1"/>
 
                     <Label Text="{Binding SelectedCompetition.Location, StringFormat='{0:dd MMM yyyy}'}"                            
                            TextColor="#006700"
                            FontSize="Body"
                            Grid.Row="0"
+                           HorizontalOptions="Center"
                            Grid.Column="2"/>
 
 
-                    <Grid Grid.Row="3" Grid.ColumnSpan="3" Margin="10">
+                    <Grid Grid.Row="2" Grid.ColumnSpan="3" Margin="10">
                         <Border Stroke="#006700" StrokeThickness="2" StrokeShape="RoundRectangle 10" HorizontalOptions="FillAndExpand">
                             <Button Text="Drivers" 
                                     BackgroundColor="White" 
@@ -67,7 +69,7 @@
                         </Border>
                     </Grid>
 
-                    <Grid Grid.Row="4" Grid.ColumnSpan="3" Margin="10">
+                    <Grid Grid.Row="3" Grid.ColumnSpan="3" Margin="10">
                         <Border Stroke="#006700" StrokeThickness="2" StrokeShape="RoundRectangle 10" HorizontalOptions="FillAndExpand">
                             <Button Text="Scorecard" 
                                     BackgroundColor="White" 
@@ -81,7 +83,7 @@
                     </Grid>
 
 
-                    <Grid Grid.Row="5" Grid.ColumnSpan="3" Margin="10">
+                    <Grid Grid.Row="4" Grid.ColumnSpan="3" Margin="10">
                         <Border Stroke="#006700" StrokeThickness="2" StrokeShape="RoundRectangle 10" HorizontalOptions="FillAndExpand">
                             <Button Text="Ruleset" 
                                     BackgroundColor="White" 
@@ -94,7 +96,7 @@
                         </Border>
                     </Grid>
 
-                    <Grid Grid.Row="6" Grid.ColumnSpan="3" Margin="10">
+                    <Grid Grid.Row="5" Grid.ColumnSpan="3" Margin="10">
                         <Border Stroke="#006700" StrokeThickness="2" StrokeShape="RoundRectangle 10" HorizontalOptions="FillAndExpand">
                             <Button Text="Leaderboard" 
                                     BackgroundColor="White" 
@@ -108,6 +110,16 @@
                     </Grid>
                 </Grid>
             </Border>
+            <Button Text="Join" 
+                    Margin="30"
+                    BackgroundColor="#006700" 
+                    TextColor="White" 
+                    FontSize="16"  
+                    CornerRadius="20"  
+                    Grid.Row="5"  
+                    WidthRequest="200"
+                    HorizontalOptions="Center"
+                    Command="{Binding ShowJoinPopupCommand}"
+                    />
         </StackLayout>
-    </ScrollView>
 </ContentPage>

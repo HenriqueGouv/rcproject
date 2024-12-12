@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Maui.Views;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using rcproject.Model;
 using System;
@@ -52,8 +53,23 @@ namespace rcproject.ViewModel
         [RelayCommand]
         private async Task NavigateToLeaderboard()
         {
-            await Shell.Current.GoToAsync("///Leaderboard");
+            var navigationParameters = new Dictionary<string, object>
+            {
+                { "Competition", SelectedCompetition }
+            };
+            await Shell.Current.GoToAsync("///Leaderboard", navigationParameters);
         }
+
+
+        [RelayCommand]
+        private void ShowJoinPopup()
+        {
+
+            var joinPopup = new rcproject.View.JoinPopup(SelectedCompetition);
+            Application.Current.MainPage.ShowPopup(joinPopup);
+
+        }
+
 
     }
 }
