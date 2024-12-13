@@ -9,11 +9,24 @@
         <vm:LeaderboardViewModel/>
     </ContentPage.BindingContext>
 
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Shadow">
+                <Setter.Value>
+                    <Shadow Brush="Black"
+                            Offset="0,1"
+                            Radius="4"
+                            Opacity="0.2"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </ContentPage.Resources>
+
 
     <Grid Padding="20">
         <Label Text="Leaderboard" FontSize="24" TextColor="#006700" HorizontalOptions="Center" Margin="0,20,0,20"/>
 
-        <Border BackgroundColor="White" Stroke="#006700" StrokeShape="RoundRectangle 10" StrokeThickness="2" Padding="10">
+        <Border BackgroundColor="White"  Stroke="#006700" StrokeShape="RoundRectangle 25" StrokeThickness="3" Padding="5">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -34,7 +47,7 @@
                 <CollectionView ItemsSource="{Binding SelectedCompetition.Drivers}" Grid.Row="1" Grid.ColumnSpan="3">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <Grid Padding="5">
+                            <Grid Padding="4">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
