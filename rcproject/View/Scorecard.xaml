@@ -4,9 +4,10 @@
              x:Class="rcproject.View.Scorecard"
              Title="Scorecard">
     <ContentPage.Content>
-        <VerticalStackLayout Padding="10" Spacing="15" BackgroundColor="White">
+        <ScrollView VerticalScrollBarVisibility="Never">
+            <VerticalStackLayout Padding="10" Spacing="15" BackgroundColor="White">
 
-            <Label x:Name="scoreLabel" 
+                <Label x:Name="scoreLabel" 
                    Text="Total Score: 0" 
                    HorizontalOptions="Center" 
                    FontSize="24" 
@@ -14,53 +15,53 @@
                    TextColor="#2E7D32"
                    Margin="0,10,0,20" />
 
-            <StackLayout x:Name="ScoreEntries" Spacing="16">
-                
-                <Grid ColumnDefinitions="*, 60, 60" ColumnSpacing="8">
-                    <Frame BackgroundColor="#2E7D32" CornerRadius="8" Padding="15,10" HasShadow="True">
-                        <Label Text="Gate (10)" TextColor="White" FontSize="18" HorizontalOptions="Start" VerticalOptions="Center"/>
-                    </Frame>
-                    <Button Text="+" Grid.Column="1" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
-                    <Button Text="-" Grid.Column="2" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
-                </Grid>
+                <StackLayout x:Name="ScoreEntries" Spacing="16">
 
-                
-                <Grid ColumnDefinitions="*, 60, 60" ColumnSpacing="8">
-                    <Frame BackgroundColor="#2E7D32" CornerRadius="8" Padding="15,10" HasShadow="True">
-                        <Label Text="Boundary (10)"
+                    <Grid ColumnDefinitions="*, 60, 60" ColumnSpacing="8">
+                        <Frame BackgroundColor="#2E7D32" CornerRadius="8" Padding="15,10" HasShadow="True">
+                            <Label Text="Gate (10)" TextColor="White" FontSize="18" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        </Frame>
+                        <Button Text="+" Grid.Column="1" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
+                        <Button Text="-" Grid.Column="2" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
+                    </Grid>
+
+
+                    <Grid ColumnDefinitions="*, 60, 60" ColumnSpacing="8">
+                        <Frame BackgroundColor="#2E7D32" CornerRadius="8" Padding="15,10" HasShadow="True">
+                            <Label Text="Boundary (10)"
                                TextColor="White"
                                FontSize="18"
                                HorizontalOptions="Start"
                                VerticalOptions="Center"/>
-                    </Frame>
-                    <Button Text="+" Grid.Column="1" 
+                        </Frame>
+                        <Button Text="+" Grid.Column="1" 
                             FontSize="20" 
                             FontAttributes="Bold"
                             BackgroundColor="#E8F5E9"
                             TextColor="#2E7D32"
                             CornerRadius="8"
                             HeightRequest="45"/>
-                    
-                    <Button Text="-" Grid.Column="2" 
+
+                        <Button Text="-" Grid.Column="2" 
                             FontSize="20" 
                             FontAttributes="Bold" 
                             BackgroundColor="#E8F5E9" 
                             TextColor="#2E7D32" 
                             CornerRadius="8" 
                             HeightRequest="45"/>
-                </Grid>
+                    </Grid>
 
-                <!-- Touch Row -->
-                <Grid ColumnDefinitions="*, 60, 60" ColumnSpacing="8">
-                    <Frame BackgroundColor="#2E7D32" CornerRadius="8" Padding="15,10" HasShadow="True">
-                        <Label Text="Touch (10)" 
+                    <!-- Touch Row -->
+                    <Grid ColumnDefinitions="*, 60, 60" ColumnSpacing="8">
+                        <Frame BackgroundColor="#2E7D32" CornerRadius="8" Padding="15,10" HasShadow="True">
+                            <Label Text="Touch (10)" 
                                TextColor="White" 
                                FontSize="18" 
                                HorizontalOptions="Start" 
                                VerticalOptions="Center"/>
-                    </Frame>
-                    
-                    <Button Text="+" 
+                        </Frame>
+
+                        <Button Text="+" 
                             Grid.Column="1" 
                             FontSize="20"
                             FontAttributes="Bold"
@@ -68,8 +69,8 @@
                             TextColor="#2E7D32" 
                             CornerRadius="8"
                             HeightRequest="45"/>
-                    
-                    <Button Text="-" 
+
+                        <Button Text="-" 
                             Grid.Column="2" 
                             FontSize="20" 
                             FontAttributes="Bold"
@@ -77,46 +78,46 @@
                             TextColor="#2E7D32"
                             CornerRadius="8"
                             HeightRequest="45"/>
-                </Grid>
+                    </Grid>
 
-                <!-- Reposition Row -->
-                <Grid ColumnDefinitions="*, 60, 60" ColumnSpacing="8">
-                    <Frame BackgroundColor="#2E7D32" CornerRadius="8" Padding="15,10" HasShadow="True">
-                        <Label Text="Reposition (20)" TextColor="White" FontSize="18" HorizontalOptions="Start" VerticalOptions="Center"/>
-                    </Frame>
-                    <Button Text="+" Grid.Column="1" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
-                    <Button Text="-" Grid.Column="2" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
-                </Grid>
+                    <!-- Reposition Row -->
+                    <Grid ColumnDefinitions="*, 60, 60" ColumnSpacing="8">
+                        <Frame BackgroundColor="#2E7D32" CornerRadius="8" Padding="15,10" HasShadow="True">
+                            <Label Text="Reposition (20)" TextColor="White" FontSize="18" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        </Frame>
+                        <Button Text="+" Grid.Column="1" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
+                        <Button Text="-" Grid.Column="2" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
+                    </Grid>
 
-                <!-- Wrong Gate Row -->
-                <Grid ColumnDefinitions="*, 60, 60" ColumnSpacing="8">
-                    <Frame BackgroundColor="#2E7D32" CornerRadius="8" Padding="15,10" HasShadow="True">
-                        <Label Text="Wrong Gate (10)" TextColor="White" FontSize="18" HorizontalOptions="Start" VerticalOptions="Center"/>
-                    </Frame>
-                    <Button Text="+" Grid.Column="1" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
-                    <Button Text="-" Grid.Column="2" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
-                </Grid>
+                    <!-- Wrong Gate Row -->
+                    <Grid ColumnDefinitions="*, 60, 60" ColumnSpacing="8">
+                        <Frame BackgroundColor="#2E7D32" CornerRadius="8" Padding="15,10" HasShadow="True">
+                            <Label Text="Wrong Gate (10)" TextColor="White" FontSize="18" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        </Frame>
+                        <Button Text="+" Grid.Column="1" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
+                        <Button Text="-" Grid.Column="2" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
+                    </Grid>
 
-                <!-- DNF Row -->
-                <Grid ColumnDefinitions="*, 60, 60" ColumnSpacing="8">
-                    <Frame BackgroundColor="#2E7D32" CornerRadius="8" Padding="15,10" HasShadow="True">
-                        <Label Text="DNF (20)" TextColor="White" FontSize="18" HorizontalOptions="Start" VerticalOptions="Center"/>
-                    </Frame>
-                    <Button Text="+" Grid.Column="1" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
-                    <Button Text="-" Grid.Column="2" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
-                </Grid>
+                    <!-- DNF Row -->
+                    <Grid ColumnDefinitions="*, 60, 60" ColumnSpacing="8">
+                        <Frame BackgroundColor="#2E7D32" CornerRadius="8" Padding="15,10" HasShadow="True">
+                            <Label Text="DNF (20)" TextColor="White" FontSize="18" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        </Frame>
+                        <Button Text="+" Grid.Column="1" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
+                        <Button Text="-" Grid.Column="2" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
+                    </Grid>
 
-                <!-- DNS Row -->
-                <Grid ColumnDefinitions="*, 60, 60" ColumnSpacing="8">
-                    <Frame BackgroundColor="#2E7D32" CornerRadius="8" Padding="15,10" HasShadow="True">
-                        <Label Text="DNS (200)" TextColor="White" FontSize="18" HorizontalOptions="Start" VerticalOptions="Center"/>
-                    </Frame>
-                    <Button Text="+" Grid.Column="1" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
-                    <Button Text="-" Grid.Column="2" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
-                </Grid>
-            </StackLayout>
+                    <!-- DNS Row -->
+                    <Grid ColumnDefinitions="*, 60, 60" ColumnSpacing="8">
+                        <Frame BackgroundColor="#2E7D32" CornerRadius="8" Padding="15,10" HasShadow="True">
+                            <Label Text="DNS (200)" TextColor="White" FontSize="18" HorizontalOptions="Start" VerticalOptions="Center"/>
+                        </Frame>
+                        <Button Text="+" Grid.Column="1" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
+                        <Button Text="-" Grid.Column="2" FontSize="20" FontAttributes="Bold" BackgroundColor="#E8F5E9" TextColor="#2E7D32" CornerRadius="8" HeightRequest="45"/>
+                    </Grid>
+                </StackLayout>
 
-            <Button Text="Submit Score" 
+                <Button Text="Submit Score" 
                     FontSize="20" 
                     FontAttributes="Bold"
                     BackgroundColor="#2E7D32" 
@@ -126,7 +127,8 @@
                     Margin="20,15"
                     Clicked="OnSubmitClicked" />
 
-        </VerticalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
     </ContentPage.Content>
 
     <ContentPage.Resources>

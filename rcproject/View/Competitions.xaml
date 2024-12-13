@@ -15,7 +15,7 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout>
-                        <Border StrokeShape="RoundRectangle 20" Stroke="#006700" Margin="10">
+                        <Border StrokeShape="RoundRectangle 20" Stroke="#006700" Margin="10" StrokeThickness="2">
                             <Grid Padding="10" RowSpacing="5" HorizontalOptions="End">
 
                                 <Grid.RowDefinitions>

@@ -31,7 +31,7 @@
                 <Label Text="Position" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#006700"/>
                 <Label Text="Score" Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#006700"/>
 
-                <CollectionView ItemsSource="{Binding Drivers}" Grid.Row="1" Grid.ColumnSpan="3">
+                <CollectionView ItemsSource="{Binding SelectedCompetition.Drivers}" Grid.Row="1" Grid.ColumnSpan="3">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <Grid Padding="5">

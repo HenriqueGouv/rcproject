@@ -13,19 +13,28 @@ using System.Threading.Tasks;
 
 namespace rcproject.ViewModel
 {
-    [QueryProperty(nameof(Competition), "Competition")]
-    public partial class JoinCompetition:ObservableObject
+    [QueryProperty(nameof(SelectedCompetition), "Competition")]
+    public partial class JoinCompetition : ObservableObject
     {
         private readonly JoinPopup popup;
+
+        private Competition selectedCompetition;
+
+        public Competition SelectedCompetition
+        {
+            get => selectedCompetition;
+            set
+            {
+                SetProperty(ref selectedCompetition, value);
+
+            }
+        }
         public JoinCompetition(Competition competition, JoinPopup popup)
         {
-            Competition = competition;
+            selectedCompetition = competition;
             this.popup = popup;
             HasError = false;
         }
-
-        [ObservableProperty]
-        private Competition competition;
 
         [ObservableProperty]
         private string userName;
@@ -42,30 +51,26 @@ namespace rcproject.ViewModel
         [RelayCommand]
         private async Task Join()
         {
-            Debug.WriteLine("Join command executed");
-            Debug.WriteLine($"JoinCode: {JoinCode}, Competition JoinCode: {Competition.JoinCode}");
+            Debug.WriteLine($"JoinCode: {JoinCode}, Competition JoinCode: {selectedCompetition.JoinCode}");
+            Debug.WriteLine($"UserName: {UserName}");
 
-            if (JoinCode == Competition.JoinCode)
+            if (!string.IsNullOrWhiteSpace(JoinCode) && JoinCode == selectedCompetition.JoinCode)
             {
-                if (Competition.Drivers == null)
+                if (selectedCompetition.Drivers == null)
                 {
-                    Competition.Drivers = new ObservableCollection<Driver>();
-                    Debug.WriteLine("Initialized Competition.Drivers collection");
+                    selectedCompetition.Drivers = new ObservableCollection<Driver>();
+                    Debug.WriteLine("Initialized SelectedCompetition.Drivers collection");
                 }
-                
 
-                Competition.Drivers.Add(new Driver { DriverName = UserName, DriverScore = 0 });
-
+                SelectedCompetition.Drivers.Add(new Driver { DriverName = UserName, DriverScore = 0 });
                 Debug.WriteLine($"Driver added: {UserName}");
 
                 popup.ClosePopup();
 
                 await Shell.Current.GoToAsync("///CompetitionDetailPage", new Dictionary<string, object>
                 {
-                    { "Competition", Competition }
+                    { "Competition", selectedCompetition }
                 });
-
-             
             }
             else
             {
