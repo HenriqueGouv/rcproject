@@ -4,6 +4,7 @@
              x:Class="rcproject.View.Competitions"
              xmlns:vm="clr-namespace:rcproject.ViewModel"
              xmlns:m="clr-namespace:rcproject.Model"
+             xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
              Title="Competitions">
 
     <ContentPage.BindingContext>
@@ -35,6 +36,17 @@
                                     <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:CreateCompetitions}}, Path=NavigateToCompetitionDetailCommand}"
                                                           CommandParameter="{Binding .}" />
                                 </Grid.GestureRecognizers>
+
+                                <maps:Map x:Name="MyMapView" 
+                                          Grid.Row="0" 
+                                          Grid.RowSpan="5" 
+                                          Grid.Column="0" 
+                                          HorizontalOptions="Fill" 
+                                          VerticalOptions="Fill">
+                                    <maps:Map.Pins>
+                                        <maps:Pin Location="{Binding Location, Converter={StaticResource AddressToPositionConverter}}" />
+                                    </maps:Map.Pins>
+                                </maps:Map>
 
 
                                 <Label Text="{Binding Name}"

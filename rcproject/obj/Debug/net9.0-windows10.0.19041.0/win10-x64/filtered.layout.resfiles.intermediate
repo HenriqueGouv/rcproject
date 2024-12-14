@@ -1,3 +1,4 @@
+runtimes\win-x64\native\WebView2Loader.dll
 FluentUI.cs
 Font Awesome 6 Brands-Regular-400.otf
 Font Awesome 6 Free-Regular-400.otf
@@ -67,4 +68,3 @@ splashSplashScreen.scale-150.png
 splashSplashScreen.scale-200.png
 splashSplashScreen.scale-400.png
 AboutAssets.txt
-runtimes\win-x64\native\WebView2Loader.dll
