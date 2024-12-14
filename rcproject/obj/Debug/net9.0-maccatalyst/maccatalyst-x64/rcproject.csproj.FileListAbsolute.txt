@@ -601,6 +601,55 @@ C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-maccatalyst\mac
 C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.pdb
 C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.genruntimeconfig.cache
 C:\Users\jspal\source\repos\rcproject\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\ref\rcproject.dll
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauiimage.inputs
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauifont.inputs
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauisplash.inputs
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauisplash.stamp
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\rctrucks15.jpg
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\imagetwo.png
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\aboutus.jpg
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\imageone.png
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\bin.png
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\imagethree.png
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@3x.png
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@2x.png
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@3x.png
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@2x.png
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@3x.png
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@2x.png
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@3x.png
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@2x.png
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot.png
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauiimage.outputs
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauifont.stamp
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\FluentUI.cs
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\Font Awesome 6 Brands-Regular-400.otf
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\Font Awesome 6 Free-Regular-400.otf
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\Font Awesome 6 Free-Solid-900.otf
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Semibold.ttf
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\actool\_PartialAppManifest.items
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\actool\_BundleResourceWithLogicalName.items
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\actool\_ProcessedImageAssetsPath.items
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\coremlc\_PartialAppManifest.items
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\coremlc\_BundleResourceWithLogicalName.items
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\coremlc\_ProcessedCoreMLModelsPath.items
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\_ProcessedBundleResourcesPath.items
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\_ProcessedContentPath.items
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.csproj.AssemblyReference.cache
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.AssemblyInfoInputs.cache
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.AssemblyInfo.cs
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.csproj.CoreCompileInputs.cache
+C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.sourcelink.json
 C:\Rc project\rcproject\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.runtimeconfig.json
 C:\Rc project\rcproject\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.dll
 C:\Rc project\rcproject\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.pdb
@@ -859,55 +908,6 @@ C:\Rc project\rcproject\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\libxamarin-
 C:\Rc project\rcproject\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.Maui.Controls.HotReload.Forms.dll
 C:\Rc project\rcproject\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
 C:\Rc project\rcproject\bin\Debug\net9.0-maccatalyst\maccatalyst-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauiimage.inputs
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauifont.inputs
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauisplash.inputs
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauisplash.stamp
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\aboutus.jpg
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\rctrucks15.jpg
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\imageone.png
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\bin.png
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\imagethree.png
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\imagetwo.png
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@3x.png
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@2x.png
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@3x.png
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@2x.png
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@3x.png
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@2x.png
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@3x.png
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@2x.png
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot.png
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauiimage.outputs
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\mauifont.stamp
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\FluentUI.cs
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\Font Awesome 6 Brands-Regular-400.otf
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\Font Awesome 6 Free-Regular-400.otf
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\Font Awesome 6 Free-Solid-900.otf
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Semibold.ttf
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\actool\_PartialAppManifest.items
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\actool\_BundleResourceWithLogicalName.items
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\actool\_ProcessedImageAssetsPath.items
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\coremlc\_PartialAppManifest.items
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\coremlc\_BundleResourceWithLogicalName.items
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\coremlc\_ProcessedCoreMLModelsPath.items
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\_ProcessedBundleResourcesPath.items
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\_ProcessedContentPath.items
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.csproj.AssemblyReference.cache
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.GeneratedMSBuildEditorConfig.editorconfig
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.AssemblyInfoInputs.cache
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.AssemblyInfo.cs
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.csproj.CoreCompileInputs.cache
-C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.sourcelink.json
 C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\XamlC.stamp
 C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.csproj.Up2Date
 C:\Rc project\rcproject\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\rcproject.dll

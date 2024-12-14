@@ -85,16 +85,20 @@ namespace rcproject.View
             int finalScore = penalties.Sum(p => p.Value * penaltyValues[p.Key]);
 
             await DisplayAlert("Score Submitted",
-                             $"Final Score: {finalScore}\nPenalties:\n" +
-                             string.Join("\n", penalties.Select(p => $"{p.Key}: {p.Value}")),
-                             "OK");
+                              $"Final Score: {finalScore}\nPenalties:\n" +
+                              string.Join("\n", penalties.Select(p => $"{p.Key}: {p.Value}")),
+                              "OK");
 
+            // Reset penalties
             foreach (var key in penalties.Keys.ToList())
             {
                 penalties[key] = 0;
             }
             UpdateScore();
+
+            // Pop current page and navigate to existing Leaderboard
             await Navigation.PopAsync();
+            await Shell.Current.GoToAsync("//Drivers");
         }
 
         protected override bool OnBackButtonPressed()
