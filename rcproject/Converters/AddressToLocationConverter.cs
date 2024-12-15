@@ -3,7 +3,7 @@ using System.Globalization;
 using Microsoft.Maui.Controls;
 using Microsoft.Maui.Maps;
 using rcproject.Services;
-using Location = rcproject.Services.Location;
+
 
 namespace rcproject.Converters
 {

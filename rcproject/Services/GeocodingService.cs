@@ -1,20 +1,19 @@
-﻿using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Net.Http;
 using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
+using Microsoft.Maui.Devices.Sensors;
+
 
 namespace rcproject.Services
 {
     public class GeocodingService
     {
-        private readonly string apiKey = "AIzaSyBHFRvlRcO5RLg4CgYOpK1VOzCponiPcaA";
+        private readonly string apiKey = "YOUR_GOOGLE_MAPS_API_KEY"; // Replace with your actual API key
 
         public async Task<Location> GetLocationFromAddressAsync(string address)
         {
             using var client = new HttpClient();
-            var url = $"https://maps.googleapis.com/maps/api/geocode/json?address={address}&key={apiKey}";
+            var url = $"https://maps.googleapis.com/maps/api/geocode/json?address={Uri.EscapeDataString(address)}&key={apiKey}";
             var response = await client.GetStringAsync(url);
             var json = JObject.Parse(response);
 
@@ -25,20 +24,11 @@ namespace rcproject.Services
                 var longitude = location.Value<double>("lng");
                 return new Location(latitude, longitude);
             }
-
-            return new Location(0, 0);
-        }
-    }
-
-    public class Location
-    {
-        public double Latitude { get; set; }
-        public double Longitude { get; set; }
-
-        public Location(double latitude, double longitude)
-        {
-            Latitude = latitude;
-            Longitude = longitude;
+            else
+            {
+                // Fallback location
+                return new Location(0, 0);
+            }
         }
     }
 }

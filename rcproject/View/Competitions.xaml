@@ -37,14 +37,14 @@
                                                           CommandParameter="{Binding .}" />
                                 </Grid.GestureRecognizers>
 
-                                <maps:Map x:Name="MyMapView" 
+                                <maps:Map x:Name="MyMap" 
                                           Grid.Row="0" 
                                           Grid.RowSpan="5" 
                                           Grid.Column="0" 
                                           HorizontalOptions="Fill" 
                                           VerticalOptions="Fill">
                                     <maps:Map.Pins>
-                                        <maps:Pin Location="{Binding Location, Converter={StaticResource AddressToPositionConverter}}" />
+                                        <maps:Pin Location="{Binding Location, Converter={StaticResource AddressToLocationConverter}}" />
                                     </maps:Map.Pins>
                                 </maps:Map>
 

@@ -11,7 +11,6 @@ namespace rcproject
             builder
                 .UseMauiApp<App>()
                 .UseMauiCommunityToolkit()
-                .UseMauiMaps()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -19,10 +18,11 @@ namespace rcproject
                     fonts.AddFont("Font Awesome 6 Free-Regular-400.otf", "FontAwesomeRegular");
                     fonts.AddFont("Font Awesome 6 Free-Solid-900.otf", "FontAwesomeSolid");
                     fonts.AddFont("Font Awesome 6 Brands-Regular-400.otf", "FontAwesomeBrands");
-                });
+                })
+                .UseMauiMaps();
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
