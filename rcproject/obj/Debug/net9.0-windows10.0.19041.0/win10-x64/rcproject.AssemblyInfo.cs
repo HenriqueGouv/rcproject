@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("rcproject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+7257af32645831277f55259beba5e4cfcb37bf22")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+38c8c02a6c3832689b6c5bc553acffb3384b08c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("rcproject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("rcproject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

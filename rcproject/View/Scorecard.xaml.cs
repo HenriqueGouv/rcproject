@@ -111,6 +111,12 @@ namespace rcproject.View
                 await DisplayAlert("Score Submitted",
                     $"Final Score: {finalScore}\nUpdated Driver Score: {_selectedDriver.DriverScore}",
                     "OK");
+
+                var viewModel = BindingContext as LeaderboardViewModel;
+                if (viewModel != null)
+                {
+                    viewModel.LoadDrivers(viewModel.SelectedCompetition); // Refresh the driver list
+                }
             }
         }
         protected override bool OnBackButtonPressed()

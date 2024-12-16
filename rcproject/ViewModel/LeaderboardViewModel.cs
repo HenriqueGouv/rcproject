@@ -54,7 +54,7 @@ namespace rcproject.ViewModel
         private ObservableCollection<Driver> drivers;
      
 
-        private void LoadDrivers(Competition competition)
+        public void LoadDrivers(Competition competition)
         {
             if (competition == null || competition.Drivers == null)
             {
@@ -64,7 +64,7 @@ namespace rcproject.ViewModel
             else
             {
               
-                var sortedDrivers = competition.Drivers.OrderByDescending(d => d.DriverScore).ToList();
+                var sortedDrivers = competition.Drivers.OrderBy(d => d.DriverScore).ToList();
 
          
                 for (int i = 0; i < sortedDrivers.Count; i++)
