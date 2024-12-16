@@ -4,8 +4,6 @@ using CommunityToolkit.Mvvm.Input;
 using rcproject.Model;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace rcproject.ViewModel
@@ -13,6 +11,8 @@ namespace rcproject.ViewModel
     [QueryProperty(nameof(SelectedCompetition), "Competition")]
     public partial class CompetitionDetailViewModel : ObservableObject
     {
+
+       
         private Competition selectedCompetition;
 
         public Competition SelectedCompetition
@@ -31,11 +31,7 @@ namespace rcproject.ViewModel
         public string Location => SelectedCompetition?.Location;
 
 
-        [RelayCommand]
-        private async Task NavigateToScorecard()
-        {
-            await Shell.Current.GoToAsync("///Scorecard");
-        }
+     
 
         [RelayCommand]
         private async Task NavigateToRuleset()
@@ -61,8 +57,8 @@ namespace rcproject.ViewModel
                 { "Competition", SelectedCompetition }
             };
             await Shell.Current.GoToAsync("///Drivers", navigationParameters);
-        }
 
+        }
 
 
         [RelayCommand]
@@ -71,7 +67,7 @@ namespace rcproject.ViewModel
 
             var joinPopup = new rcproject.View.JoinPopup(SelectedCompetition);
             Application.Current.MainPage.ShowPopup(joinPopup);
-
+            
         }
 
 

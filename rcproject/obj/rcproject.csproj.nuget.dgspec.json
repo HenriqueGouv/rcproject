@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jspal\\source\\repos\\rcproject2\\rcproject\\rcproject.csproj": {}
+    "C:\\Users\\jspal\\Source\\Repos\\rcproject2\\rcproject\\rcproject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jspal\\source\\repos\\rcproject2\\rcproject\\rcproject.csproj": {
+    "C:\\Users\\jspal\\Source\\Repos\\rcproject2\\rcproject\\rcproject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jspal\\source\\repos\\rcproject2\\rcproject\\rcproject.csproj",
+        "projectUniqueName": "C:\\Users\\jspal\\Source\\Repos\\rcproject2\\rcproject\\rcproject.csproj",
         "projectName": "rcproject",
-        "projectPath": "C:\\Users\\jspal\\source\\repos\\rcproject2\\rcproject\\rcproject.csproj",
+        "projectPath": "C:\\Users\\jspal\\Source\\Repos\\rcproject2\\rcproject\\rcproject.csproj",
         "packagesPath": "C:\\Users\\jspal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jspal\\source\\repos\\rcproject2\\rcproject\\obj\\",
+        "outputPath": "C:\\Users\\jspal\\Source\\Repos\\rcproject2\\rcproject\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

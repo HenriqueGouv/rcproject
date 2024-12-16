@@ -43,7 +43,7 @@
                                    Grid.Row="0"
                                    Grid.Column="1"/>
 
-                                <Label Text="{Binding Date, StringFormat='{0:dd MMM yyyy}'}"                            
+                                <Label Text="{Binding Date, StringFormat='{}{0:HH:mm}'}"                             
                                    TextColor="#006700"
                                    FontSize="16"
                                    Grid.Row="1"

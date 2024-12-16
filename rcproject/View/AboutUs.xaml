@@ -59,11 +59,8 @@
                    Margin="10,0,0,10"
                    Padding="5"
                    Grid.Row="5"/>
-            <Image 
-                Source="rctrucks15.jpg" 
-                Aspect="Fill"
-                Grid.Row="6"
-            />
+           
+      
         </Grid>
     </ScrollView>
 </ContentPage>

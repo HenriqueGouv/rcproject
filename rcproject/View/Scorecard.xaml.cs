@@ -6,11 +6,28 @@ using rcproject.ViewModel;
 
 namespace rcproject.View
 {
+    [QueryProperty(nameof(SelectedDriver), "SelectedDriver")]
     public partial class Scorecard : ContentPage
     {
-        private readonly CompetitionDetailViewModel _competitionDetailViewModel = new CompetitionDetailViewModel();
+        private Driver _selectedDriver;
 
-        private Dictionary<string, int> penalties = new()
+        public Driver SelectedDriver
+        {
+            get => _selectedDriver;
+            set
+            {
+                _selectedDriver = value;
+                OnPropertyChanged();
+            }
+        }
+        public Scorecard(Driver selectedDriver)
+        {
+            InitializeComponent();
+            SetupButtonHandlers();
+            
+        }
+
+        public Dictionary<string, int> penalties = new()
         {
             { "Gate", 0 },
             { "Boundary", 0 },
@@ -21,7 +38,7 @@ namespace rcproject.View
             { "DNS", 0 }
         };
 
-        private Dictionary<string, int> penaltyValues = new()
+        public Dictionary<string, int> penaltyValues = new()
         {
             { "Gate", 10 },
             { "Boundary", 10 },
@@ -32,20 +49,11 @@ namespace rcproject.View
             { "DNS", 200 }
         };
 
-        public Scorecard(Competition selectedCompetition)
-        {
-            InitializeComponent();
-            BindingContext = new LeaderboardViewModel(selectedCompetition);
-        }
+        
 
-        public Scorecard()
-        {
-            InitializeComponent();
-            SetupButtonHandlers();
-            BindingContext = new LeaderboardViewModel();
-        }
+        
 
-        private void SetupButtonHandlers()
+        public void SetupButtonHandlers()
         {
             var stackLayout = Content.FindByName<StackLayout>("ScoreEntries");
             foreach (Grid grid in stackLayout.Children.OfType<Grid>())
@@ -68,13 +76,13 @@ namespace rcproject.View
             }
         }
 
-        private void AddPenalty(string penaltyType)
+        public void AddPenalty(string penaltyType)
         {
             penalties[penaltyType]++;
             UpdateScore();
         }
 
-        private void SubtractPenalty(string penaltyType)
+        public void SubtractPenalty(string penaltyType)
         {
             if (penalties[penaltyType] > 0)
             {
@@ -83,7 +91,7 @@ namespace rcproject.View
             }
         }
 
-        private void UpdateScore()
+        public void UpdateScore()
         {
             int totalScore = 0;
             foreach (var penalty in penalties)
@@ -93,33 +101,17 @@ namespace rcproject.View
             scoreLabel.Text = $"Total Score: {totalScore}";
         }
 
-    
-
         private async void OnSubmitClicked(object sender, EventArgs e)
         {
-            int finalScore = penalties.Sum(p => p.Value * penaltyValues[p.Key]);
-
-            await DisplayAlert("Score Submitted",
-                              $"Final Score: {finalScore}\nPenalties:\n" +
-                              string.Join("\n", penalties.Select(p => $"{p.Key}: {p.Value}")),
-                              "OK");
-
-            // Reset penalties
-            foreach (var key in penalties.Keys.ToList())
+            if (_selectedDriver != null)
             {
-                penalties[key] = 0;
+                int finalScore = penalties.Sum(p => p.Value * penaltyValues[p.Key]);
+                _selectedDriver.DriverScore += finalScore;
+
+                await DisplayAlert("Score Submitted",
+                    $"Final Score: {finalScore}\nUpdated Driver Score: {_selectedDriver.DriverScore}",
+                    "OK");
             }
-            UpdateScore();
-
-            // Pop current page and navigate to existing Leaderboard
-            await Navigation.PopAsync();
-            await NavigateToDrivers();
-        }
-
-
-        private async Task NavigateToDrivers()
-        {
-            await _competitionDetailViewModel.NavigateToDrivers();
         }
         protected override bool OnBackButtonPressed()
         {

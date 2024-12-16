@@ -33,7 +33,7 @@
                 <CollectionView ItemsSource="{Binding SelectedCompetition.Drivers}" Grid.Row="1" Grid.ColumnSpan="3">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <Grid Padding="4">
+                            <Grid Padding="10" RowSpacing="20">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
@@ -41,7 +41,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Label Text="{Binding DriverName}" Grid.Column="0" HorizontalTextAlignment="Center" TextColor="#006700"/>
                                 <Label Text="{Binding DriverScore}" Grid.Column="1" HorizontalTextAlignment="Center" TextColor="#006700"/>
-                                <Button Text="Add" BackgroundColor="#006700" Grid.Column="2" HorizontalOptions="Center" TextColor="White" CornerRadius="20"/>
+                                <Button Text="Add" HorizontalOptions="Center" BackgroundColor="#006700" Padding="5" Command="{Binding Source={RelativeSource AncestorType={x:Type vm:LeaderboardViewModel}}, Path=NavigateToScorecardCommand}" CommandParameter="{Binding .}" Grid.Column="2" TextColor="White" CornerRadius="10"/>
                             </Grid>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>

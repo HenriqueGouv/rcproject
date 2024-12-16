@@ -41,7 +41,7 @@
                            HorizontalOptions="Center"
                            Grid.Column="0"/>
 
-                    <Label Text="{Binding SelectedCompetition.Time, StringFormat='{0:dd MMM yyyy}'}"                            
+                <Label Text="{Binding SelectedCompetition.Time, StringFormat='{}{0:HH:mm}'}"                             
                            TextColor="#006700"
                            FontSize="Body"
                            Grid.Row="0"
@@ -57,13 +57,13 @@
 
                 <Grid Grid.Row="2" Grid.ColumnSpan="3" Margin="10">
                         <Border Stroke="#006700" StrokeThickness="2" StrokeShape="RoundRectangle 10" HorizontalOptions="FillAndExpand">
-                            <Button Text="Scorecard" 
+                            <Button Text="Drivers" 
                                     BackgroundColor="White" 
                                     TextColor="#006700" 
                                     FontSize="16"  
                                     CornerRadius="10" 
                                     HeightRequest="40"
-                                    Command="{Binding NavigateToScorecardCommand}"
+                                    Command="{Binding NavigateToDriversCommand}"
                                     HorizontalOptions="FillAndExpand"/>
                         </Border>
                     </Grid>

@@ -1,5 +1,8 @@
 ﻿using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
+using rcproject.Model;
+using rcproject.View;
+using rcproject.ViewModel;
 
 namespace rcproject
 {
@@ -19,9 +22,12 @@ namespace rcproject
                     fonts.AddFont("Font Awesome 6 Free-Solid-900.otf", "FontAwesomeSolid");
                     fonts.AddFont("Font Awesome 6 Brands-Regular-400.otf", "FontAwesomeBrands");
                 });
+            builder.Services.AddTransient<Scorecard>();
+            builder.Services.AddTransient<Driver>();
+            builder.Services.AddTransient<LeaderboardViewModel>();
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using rcproject.Model;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,18 @@ namespace rcproject.ViewModel
     [QueryProperty(nameof(SelectedCompetition), "Competition")]
     public partial class LeaderboardViewModel : ObservableObject
     {
+        [RelayCommand]
+        private async Task NavigateToScorecard(Driver driver)
+        {
+            var navigationParameters = new Dictionary<string, object>
+            {
+                { "SelectedDriver", driver }
+            };
+            await Shell.Current.GoToAsync("///Scorecard", navigationParameters);
+        }
+
+
+
         private Competition selectedCompetition;
 
         public Competition SelectedCompetition
@@ -35,6 +48,8 @@ namespace rcproject.ViewModel
             LoadDrivers(selectedCompetition);
         }
 
+
+     
         [ObservableProperty]
         private ObservableCollection<Driver> drivers;
      
@@ -63,5 +78,6 @@ namespace rcproject.ViewModel
                 Debug.WriteLine("Drivers collection loaded and sorted");
             }
         }
+
     }
 }
