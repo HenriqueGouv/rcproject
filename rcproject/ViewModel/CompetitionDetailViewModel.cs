@@ -31,13 +31,6 @@ namespace rcproject.ViewModel
         public string Location => SelectedCompetition?.Location;
 
 
-
-        [RelayCommand]
-        private async Task NavigateToDrivers()
-        {
-            await Shell.Current.GoToAsync("///Drivers");
-        }
-
         [RelayCommand]
         private async Task NavigateToScorecard()
         {
@@ -59,6 +52,17 @@ namespace rcproject.ViewModel
             };
             await Shell.Current.GoToAsync("///Leaderboard", navigationParameters);
         }
+
+        [RelayCommand]
+        public async Task NavigateToDrivers()
+        {
+            var navigationParameters = new Dictionary<string, object>
+            {
+                { "Competition", SelectedCompetition }
+            };
+            await Shell.Current.GoToAsync("///Drivers", navigationParameters);
+        }
+
 
 
         [RelayCommand]

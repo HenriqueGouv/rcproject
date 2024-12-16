@@ -1,9 +1,15 @@
+using CommunityToolkit.Mvvm.Input;
 using Microsoft.Maui.Controls;
+using rcproject.Model;
+using rcproject.ViewModel;
+
 
 namespace rcproject.View
 {
     public partial class Scorecard : ContentPage
     {
+        private readonly CompetitionDetailViewModel _competitionDetailViewModel = new CompetitionDetailViewModel();
+
         private Dictionary<string, int> penalties = new()
         {
             { "Gate", 0 },
@@ -26,10 +32,17 @@ namespace rcproject.View
             { "DNS", 200 }
         };
 
+        public Scorecard(Competition selectedCompetition)
+        {
+            InitializeComponent();
+            BindingContext = new LeaderboardViewModel(selectedCompetition);
+        }
+
         public Scorecard()
         {
             InitializeComponent();
             SetupButtonHandlers();
+            BindingContext = new LeaderboardViewModel();
         }
 
         private void SetupButtonHandlers()
@@ -80,6 +93,8 @@ namespace rcproject.View
             scoreLabel.Text = $"Total Score: {totalScore}";
         }
 
+    
+
         private async void OnSubmitClicked(object sender, EventArgs e)
         {
             int finalScore = penalties.Sum(p => p.Value * penaltyValues[p.Key]);
@@ -98,9 +113,14 @@ namespace rcproject.View
 
             // Pop current page and navigate to existing Leaderboard
             await Navigation.PopAsync();
-            await Shell.Current.GoToAsync("//Drivers");
+            await NavigateToDrivers();
         }
 
+
+        private async Task NavigateToDrivers()
+        {
+            await _competitionDetailViewModel.NavigateToDrivers();
+        }
         protected override bool OnBackButtonPressed()
         {
             Navigation.PopAsync();

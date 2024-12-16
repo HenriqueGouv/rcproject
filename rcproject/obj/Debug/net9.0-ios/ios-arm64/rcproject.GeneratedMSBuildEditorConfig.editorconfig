@@ -13,85 +13,85 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = rcproject
-build_property.ProjectDir = C:\Rc project\rcproject\
+build_property.ProjectDir = C:\Users\jspal\source\repos\rcproject2\rcproject\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Rc project/rcproject/App.xaml]
+[C:/Users/jspal/source/repos/rcproject2/rcproject/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = rcproject.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Rc project/rcproject/AppShell.xaml]
+[C:/Users/jspal/source/repos/rcproject2/rcproject/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = rcproject.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Rc project/rcproject/Resources/Styles/Colors.xaml]
+[C:/Users/jspal/source/repos/rcproject2/rcproject/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = rcproject.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Rc project/rcproject/Resources/Styles/Styles.xaml]
+[C:/Users/jspal/source/repos/rcproject2/rcproject/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = rcproject.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Rc project/rcproject/View/AboutUs.xaml]
+[C:/Users/jspal/source/repos/rcproject2/rcproject/View/AboutUs.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = rcproject.View.AboutUs.xaml
 build_metadata.AdditionalFiles.TargetPath = View\AboutUs.xaml
 build_metadata.AdditionalFiles.RelativePath = View\AboutUs.xaml
 
-[C:/Rc project/rcproject/View/CompetitionDetailPage.xaml]
+[C:/Users/jspal/source/repos/rcproject2/rcproject/View/CompetitionDetailPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = rcproject.View.CompetitionDetailPage.xaml
 build_metadata.AdditionalFiles.TargetPath = View\CompetitionDetailPage.xaml
 build_metadata.AdditionalFiles.RelativePath = View\CompetitionDetailPage.xaml
 
-[C:/Rc project/rcproject/View/Competitions.xaml]
+[C:/Users/jspal/source/repos/rcproject2/rcproject/View/Competitions.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = rcproject.View.Competitions.xaml
 build_metadata.AdditionalFiles.TargetPath = View\Competitions.xaml
 build_metadata.AdditionalFiles.RelativePath = View\Competitions.xaml
 
-[C:/Rc project/rcproject/View/CreateCompetition.xaml]
+[C:/Users/jspal/source/repos/rcproject2/rcproject/View/CreateCompetition.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = rcproject.View.CreateCompetition.xaml
 build_metadata.AdditionalFiles.TargetPath = View\CreateCompetition.xaml
 build_metadata.AdditionalFiles.RelativePath = View\CreateCompetition.xaml
 
-[C:/Rc project/rcproject/View/Drivers.xaml]
+[C:/Users/jspal/source/repos/rcproject2/rcproject/View/Drivers.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = rcproject.View.Drivers.xaml
 build_metadata.AdditionalFiles.TargetPath = View\Drivers.xaml
 build_metadata.AdditionalFiles.RelativePath = View\Drivers.xaml
 
-[C:/Rc project/rcproject/View/JoinPopup.xaml]
+[C:/Users/jspal/source/repos/rcproject2/rcproject/View/JoinPopup.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = rcproject.View.JoinPopup.xaml
 build_metadata.AdditionalFiles.TargetPath = View\JoinPopup.xaml
 build_metadata.AdditionalFiles.RelativePath = View\JoinPopup.xaml
 
-[C:/Rc project/rcproject/View/Leaderboard.xaml]
+[C:/Users/jspal/source/repos/rcproject2/rcproject/View/Leaderboard.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = rcproject.View.Leaderboard.xaml
 build_metadata.AdditionalFiles.TargetPath = View\Leaderboard.xaml
 build_metadata.AdditionalFiles.RelativePath = View\Leaderboard.xaml
 
-[C:/Rc project/rcproject/View/Ruleset.xaml]
+[C:/Users/jspal/source/repos/rcproject2/rcproject/View/Ruleset.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = rcproject.View.Ruleset.xaml
 build_metadata.AdditionalFiles.TargetPath = View\Ruleset.xaml
 build_metadata.AdditionalFiles.RelativePath = View\Ruleset.xaml
 
-[C:/Rc project/rcproject/View/Scorecard.xaml]
+[C:/Users/jspal/source/repos/rcproject2/rcproject/View/Scorecard.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = rcproject.View.Scorecard.xaml
 build_metadata.AdditionalFiles.TargetPath = View\Scorecard.xaml

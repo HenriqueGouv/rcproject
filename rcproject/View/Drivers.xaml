@@ -2,11 +2,51 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="rcproject.View.Drivers"
+             xmlns:vm="clr-namespace:rcproject.ViewModel"
              Title="Drivers">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <ContentPage.BindingContext>
+        <vm:LeaderboardViewModel/>
+    </ContentPage.BindingContext>
+
+    <Grid Padding="20">
+
+        <Border BackgroundColor="White"  Stroke="#006700" StrokeShape="RoundRectangle 25" StrokeThickness="3" Padding="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Label Text="Driver" Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#006700"/>
+                <Label Text="Score" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#006700"/>
+                <Label Text="Add" Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center" FontAttributes="Bold" TextColor="#006700"/>
+
+
+                <CollectionView ItemsSource="{Binding SelectedCompetition.Drivers}" Grid.Row="1" Grid.ColumnSpan="3">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Padding="4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding DriverName}" Grid.Column="0" HorizontalTextAlignment="Center" TextColor="#006700"/>
+                                <Label Text="{Binding DriverScore}" Grid.Column="1" HorizontalTextAlignment="Center" TextColor="#006700"/>
+                                <Button Text="Add" BackgroundColor="#006700" Grid.Column="2" HorizontalOptions="Center" TextColor="White" CornerRadius="20"/>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+        </Border>
+    </Grid>
 </ContentPage>
